@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'myFont-red-hat';
+    src: url('../fonts/RedHatDisplay-Medium.ttf');
+}
+
+
+* {
+    overflow-x: hidden;
+}
+
+section {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+
+.heading-top {
+    font-family: 'myFont-red-hat';
+    font-size: 30px;
+    color: #0B105C;
+    font-weight: bold;
+    text-align: center;
+}
+
+.heading-sub {
+    font-family: 'myFont-red-hat';
+    font-size: 16px;
+    color: #0B105C;
+    font-weight: bold;
+}
+
+.paragraph {
+    font-family: 'myFont-red-hat';
+    font-size: 16px;
+    color: #0B105C;
+}
+

@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card Rescue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../static/css/lostcard"> -->
+    <link rel="stylesheet" href="../../static/css/setting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-...." crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Vertical Navbar -->
+
+    <!-- Content -->
+    <section class="main-section">
+        <nav class="navbar navbar-vertical custom-sidebar">
+            <div class="brand-logo">
+                <img src="../../static/img/brand.png">
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+
+                    <a class="nav-link" href="../../template/index.html"><span><img class="icons" src="../../static/img/home.svg"></i></span>
+                        Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./lostcard.html"><span><img class="icons"
+                                src="../../static/img/lostcard.svg"></i></span>Lostcard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./foundcard.html"><span><img class="icons"
+                                src="../../static/img/foundcard.svg"></i></span>Found
+                        Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact-searching.html"><span><img class="icons"
+                                src="../../static/img/chat.svg"></i></span>Chats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span><img src="../../static/img/returncard.svg"
+                                class="icons"></i></span>Return Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./mycardcheckbox.html"><span><img src="../../static/img/mycards.svg" class="icons"
+                                alt=""></span>My Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./profile.html"><span><img src="../../static/img/myprofile.svg"
+                                class="icons"></i></span>My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./feedback.html"><span><img src="../../static/img/feedback.svg"
+                                class="icons"></i></span>Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./setting.html"><span><img src="../../static/img/setting.svg"
+                                class="icons"></i></span>Setting</a>
+                </li>
+                <a class="btn-nav" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+            </ul>
+            <!-- <button class="btn-nav">Logout</button> -->
+
+        </nav>
+
+
+        <div class="container">
+            <div class="white-bg">
+                <div class="container-custom">
+                    <div class="header-sec">
+
+                        <div class="head-container">
+                            <div class="text-sec">
+                                <h3 class="heading-hello">Settings</h3>
+                                <p class="head-para">lorem ipsum, lorem ipsum, lorem ipsum,</p>
+                            </div>
+                        </div>
+                        <div class="notification-badge">
+                            <i class="fas fa-bell"></i> <!-- Font Awesome bell icon -->
+                            <span class="badge">5</span> <!-- Notification count -->
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <button class="about-button">
+                            <span class="button-text">Notification</span>
+                            <span id="toggleButton" class="notification-toggle"></span>
+                        </button>
+                        <a style="text-decoration:none ;" href="../../home/template/about-app.html">
+                            <button class="about-button">
+                                <span class="button-text">About App</span>
+                                <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                            </button>
+                        </a>
+                        <a style="text-decoration: none;" href="../../home/template/privacy.html">
+                        <button class="about-button">
+                            <span class="button-text">Privacy Policy</span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                        </button>
+                    </a>
+                    <a style="text-decoration: none;" href="../../home/template/terms-of-services.html">
+                        <button class="about-button">
+                            <span class="button-text">Terms & Conditions</span>
+                            <span class="icon"><i class="fa-solid fa-angle-right"></i></span>
+                        </button>
+                    </a>
+                    </div>
+                    <!-- <button class="gradient-button">
+                        Logout
+                        <span class="logo"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                    </button> -->
+
+                    <button class="gradient-button" id="open-popup">
+                        Logout
+                        <span class="logo"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                    </button>
+
+                    <div class="popup" id="popup">
+                        <div class="popup-content">
+                            <p>Are you sure you <br> want to logout?</p>
+                            <button class="popup-btn" id="yes-button">No</button>
+                            <button class="popup-button" id="no-button">Yes</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const toggleButton = document.getElementById("toggleButton");
+
+                toggleButton.addEventListener("click", function () {
+                    toggleButton.classList.toggle("active");
+
+                    // Handle toggle logic here
+                    const isActive = toggleButton.classList.contains("active");
+                    if (isActive) {
+                        // Toggle is active (ON)
+                        // Your code for ON state
+                    } else {
+                        // Toggle is inactive (OFF)
+                        // Your code for OFF state
+                    }
+                });
+            });
+
+
+        </script>
+
+        <script>
+            const openPopupButton = document.getElementById("open-popup");
+            const popup = document.getElementById("popup");
+            const yesButton = document.getElementById("yes-button");
+            const noButton = document.getElementById("no-button");
+
+            openPopupButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+                popup.style.display = "flex";
+            });
+
+            yesButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+                popup.style.display = "none";
+                // Perform logout action here
+            });
+
+            noButton.addEventListener("click", function (event) {
+                event.stopPropagation();
+                popup.style.display = "none";
+            });
+
+            // Add a click event listener to the entire document
+            document.addEventListener("click", function () {
+                popup.style.display = "none"; // Close the popup
+            });
+
+        </script>
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>

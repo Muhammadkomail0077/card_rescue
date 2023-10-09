@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'myFont-red-hat';
+  src: url('../fonts/RedHatDisplay-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'myFont-poppins';
+  src: url('../fonts/Poppins-Light.ttf');
+}
+
+* {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+
+.text-center {
+  text-align: center!important;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 1500px;
+  /* margin-top: 10%; */
+}
+
+.icon-input {
+  width: 8%;
+}
+
+.pass-icon {
+  display: flex;
+  justify-content: end;
+  width: 8%;
+}
+
+form {
+  margin-top: 1%;
+}
+
+.form-container {
+  /* margin-top: 3%; */
+  margin-bottom: 3%x;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border-bottom: 1px solid #808184;
+  outline: none;
+  width: 384.73px;
+}
+
+.right {
+  justify-content: end;
+  font-family: 'myFont-red-hat';
+  color: #1C1C1C;
+  font-size: 14px;
+}
+
+.label-input {
+  display: flex;
+  margin-left: 5%;
+  margin-bottom: -4%;
+  margin-top: 5%;
+  font-family: 'myFont-red-hat';
+  color: #7B869E;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-or {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  font-family: 'myFont-poppins';
+  font-size: 12px;
+}
+
+.line1 {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.33);
+  width: 173px;
+}
+
+input[type="email"],
+input[type="password"] {
+  border: none;
+  align-items: start;
+  display: flex;
+  justify-content: start;
+  background: none;
+  /* border-bottom: 1px solid #808184; */
+  outline: none;
+  width: 100%;
+  /* width: 320.1px; */
+  height: 70.53px;
+  color: #1C1C1C;
+  font-family: 'myFont-red-hat';
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+.btn-login {
+  padding: 10px 20px;
+  background: linear-gradient(-8deg, #F9B401 0%, #FCDD8E 100%);
+  color: #0B105C;
+  border: none;
+  width: 383px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 4.53px;
+  margin-bottom: 5%;
+  font-family: 'myFont-red-hat';
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+.sign {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: 'myFont-red-hat';
+  font-size: 16px;
+  opacity: 1;
+}
+
+input[type="email"]:hover {
+  border: none;
+}
+
+input[type="submit"]:hover {
+  border-color: #7E22CE;
+  transition: .5s;
+}
+
+.image-container {
+  /* background: url('../img/Asset\ 1\ 1.png') center no-repeat; */
+  background-size: cover;
+  background-color: #F9B401;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+}
+
+.row-height {
+  height: 100vh;
+}
+
+
+.logo-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 855px) {
+  .image-container {
+    display: none !important;
+  }
+
+  .row-height {
+    height: 100vh;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+}

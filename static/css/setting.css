@@ -1,0 +1,403 @@
+@font-face {
+    font-family: "redHat-Regular";
+    src: url("../font/RedHatDisplay-Regular.ttf");
+    font-weight: 'regular';
+    font-style: normal;
+}
+
+
+body {
+    background-image: url(../img/background-img.png);
+    background: linear-gradient(#F9B401 0%, #FCDD8E 200%);
+    /* background-color: ; */
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-custom {
+    width: 100%;
+    padding: 0px 45px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.fa-solid {
+    padding-right: 10px;
+}
+
+.navbar {
+    width: 13%;
+    height: 100%;
+}
+
+.brand-logo {
+    margin: 53px 0px 61px 24px;
+}
+
+.navbar-nav {
+    text-align: left;
+    width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    font-family: 'redHat-Regular';
+    font-weight: 600;
+    margin: 0px 0px;
+    padding: 0px 0px 0px 17px;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: #10234E;
+}
+
+.card {
+    width: 18rem;
+    margin-top: 21px;
+}
+
+.icons {
+    padding-right: 10px;
+    /* fill: white; Change color to white on hover */
+    transition: fill 0.3s ease; /* Add transition for smooth color change */
+}
+.nav-item .icons {
+    filter: invert(0); /* Invert the colors */
+    transition: filter 0.3s ease; /* Add transition for smooth effect */
+}
+
+.nav-item:hover .icons {
+    filter: invert(1); /* Invert the colors on hover */
+}
+
+.nav-item .nav-link.icons {
+    fill: #ccc; /* Set initial color */
+}
+/* For Webkit browsers (like Chrome, Safari) */
+.popup::-webkit-scrollbar {
+    width: 6px;
+}
+
+.navbar-nav .nav-item:hover {
+    font-size: 15px;
+    font-family: 'redHat-Regular';
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(to right, #0B105C, rgba(11, 16, 92, 0));
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    font-size: 15px;
+    font-family: 'redHat-Regular';
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(to right, #0B105C, rgba(11, 16, 92, 0));
+}
+
+.btn-nav {
+    margin-top: 90px;
+    background-color: #0B105C;
+    border-radius: 0 20px 20px 0;
+    height: 56px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.white-bg {
+    background-color: #fff;
+    border-radius: 40px;
+    margin-top: 15px;
+    height: 722px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.head-container {
+    display: flex;
+    align-items: center;
+}
+
+.head-para {
+    color: #8B8B8B;
+}
+
+.heading-hello {
+    font-family: 'redHat-Regular';
+    font-weight: 800;
+    font-size: 30px;
+    color: #0B105C;
+    margin: 0px;
+}
+
+.text-sec {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.main-section {
+    display: flex;
+}
+
+.notification-badge {
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.notification-badge .fas {
+    font-size: 20px;
+}
+
+.notification-badge .badge {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    /* Make it a circle */
+    font-size: 8px;
+    font-family: 'redHat-Regular';
+    font-weight: 700;
+    padding: 2px 4px;
+    /* Adjust padding as needed */
+}
+
+.header-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-button {
+    height: 52px;
+    background-color: white;
+    color: #333;
+    /* Text color */
+    border: 1px white;
+    padding: 15px 20px;
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Shadow effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 506.61px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+    /* Add margin-bottom for spacing between buttons */
+
+}
+
+
+
+.button-text {
+    margin-right: 10px;
+    color: #10234E;
+    font-family: 'redHat-Regular';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 18px;
+    width: 21px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    /* Shadow effect */
+    padding-bottom: 25px;
+    padding-left: 6px;
+    color: #667080;
+    background-color: #FFFFFF;
+    border-radius: 18.89px;
+    height: 21px;
+
+}
+
+.notification-toggle {
+    display: block;
+    width: 29.42px;
+    height: 20.02px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.notification-toggle:before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: white;
+    top: 4.2px;
+    left: 1px;
+    transition: transform 0.3s;
+}
+
+.notification-toggle.active {
+    background-color: #4CAF50;
+}
+
+.notification-toggle.active:before {
+    transform: translateX(15px);
+}
+
+.gradient-button {
+    background: linear-gradient(#F9B401 0%, #FCDD8E 200%);
+    /* color: white; */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 383px;
+    text-align: start;
+    color: #0B105C;
+    font-family: 'redHat-Regular';
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 35px;
+
+}
+
+.gradient-button .logo {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.gradient-button .logo {
+    /* font-size: 24px; */
+    color: #0B105C;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /* width: 312px; */
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #0B105C;
+    font-family: 'redHat-Regular';
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+.popup-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background: linear-gradient(#F9B401 0%, #FCDD8E 200%);
+    color: #0B105C;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 131.03px;
+    font-family: 'redHat-Regular';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.popup-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: #E1E1E1;
+    color: #0B105C;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 131.03px;
+    font-family: 'redHat-Regular';
+    font-weight: 700;
+    font-size: 16px;
+    /* border: 1px solid; */
+
+}
+
+/* .popup-button:hover {
+    background-color: #FCDD8E;
+} */
+
+
+
+
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1673px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+
+    .navbar-vertical.custom-sidebar {
+        width: 24%;
+        padding: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        padding-left: 29px;
+    }
+
+    .navbar {
+        width: 17%;
+        height: 100%;
+    }
+    .head-para {
+        color: #8B8B8B;
+        font-size: 12px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 15px;
+        font-family: 'redHat-Regular';
+        font-weight: 600;
+        margin: 0px 0px;
+        padding: 10px 0px;
+        height: auto;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        color: #10234E;
+    }
+
+    .btn-nav {
+        width: 100%;
+        text-align: center;
+    }
+
+}

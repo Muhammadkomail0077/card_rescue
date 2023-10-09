@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card Rescue</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../static/css/lostcard"> -->
+    <link rel="stylesheet" href="../../static/css/lostnewcard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-...." crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Vertical Navbar -->
+
+    <!-- Content -->
+    <section class="main-section">
+        <nav class="navbar navbar-vertical custom-sidebar">
+            <div class="brand-logo">
+                <img src="../../static/img/brand.png">
+            </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+
+                    <a class="nav-link" href="../../template/index.html"><span><img class="icons" src="../../static/img/home.svg"></i></span>
+                        Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./lostcard.html"><span><img class="icons"
+                                src="../../static/img/lostcard.svg"></i></span>Lostcard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./foundcard.html"><span><img class="icons"
+                                src="../../static/img/foundcard.svg"></i></span>Found
+                        Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact-searching.html"><span><img class="icons"
+                                src="../../static/img/chat.svg"></i></span>Chats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><span><img src="../../static/img/returncard.svg"
+                                class="icons"></i></span>Return Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./mycardcheckbox.html"><span><img src="../../static/img/mycards.svg" class="icons"
+                                alt=""></span>My Cards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./profile.html"><span><img src="../../static/img/myprofile.svg"
+                                class="icons"></i></span>My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./feedback.html"><span><img src="../../static/img/feedback.svg"
+                                class="icons"></i></span>Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./setting.html"><span><img src="../../static/img/setting.svg"
+                                class="icons"></i></span>Setting</a>
+                </li>
+                <a class="btn-nav" href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+            </ul>
+            <!-- <button class="btn-nav">Logout</button> -->
+
+        </nav>
+
+
+        <div class="container">
+            <div class="white-bg">
+                <div class="container-custom">
+                    <div class="header-sec">
+
+                        <div class="head-container">
+                            <div class="text-sec">
+                                <h3 class="heading-hello">LostCards</h3>
+                                <p class="head-para">lorem ipsum, lorem ipsum, lorem ipsum,</p>
+                            </div>
+                        </div>
+                        <div class="notification-badge">
+                            <i class="fas fa-bell"></i> <!-- Font Awesome bell icon -->
+                            <span class="badge">5</span> <!-- Notification count -->
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <form>
+                                <label class="coustom-label" for="card-type">Card Type</label>
+                                <div class="custom-select">
+                                    <span><img src="../../static/img/mycards.svg" alt=""></span>
+                                    <select id="card-type" name="card-type">
+                                        <option value="credit-card">Credit Card</option>
+                                        <option value="debit-card">Debit Card</option>
+                                        <option value="prepaid-card">Prepaid Card</option>
+                                    </select>
+                                </div>
+                                <label class="coustom-label" for="card-type">Issuer</label>
+                                <div class="custom-select">
+                                    <span><img src="../../static/img/calender.svg" alt=""></span>
+                                    <select id="card-type" name="card-type">
+                                        <option value="credit-card">Bank Of America</option>
+                                        <option value="debit-card">Debit Card</option>
+                                        <option value="prepaid-card">Prepaid Card</option>
+                                    </select>
+                                </div>
+                                <label class="coustom-label" for="password">Card Holder</label>
+
+                                <div class="input-container">
+                                    <img src="../../static/img/myprofile.svg" class="input-icon" alt="">
+                                    <input type="password" id="password" name="Claire James" placeholder="Claire James">
+                                </div>
+
+                                <label class="coustom-label" for="age">Card Number</label>
+                                <div class="input-container">
+                                    <img src="../../static/img/mycards.svg" class="input-mycard" alt="">
+                                    <input type="text" id="age" name="age" placeholder="****** ****** ****** 23456"><br>
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-fileds ">
+                                        <label class="coustom-label" for="expiryDate">Expiry Date</label>
+                                        <span>
+                                            <img src="../../static/img/calender.svg" class="input-icon-date" alt="">
+                                        </span>
+                                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                                    </div>
+                                    <div class="width"></div>
+                                    <div class="input-fileds">
+                                        <label class="coustom-label" for="cvv">CVV</label>
+                                        <span>
+                                            <img src="../../static/img/calender.svg" class="input-icon-cvv" alt="">
+                                        </span>
+                                        <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+                <div class="multi-buttons">
+                    <div class="buttons">
+                        <button class="btn-main btn-active" id="openPopup">Submit</button>
+                        <div class="overlay" id="popupOverlay"></div>
+                        <div class="popup" id="popupModal">
+                            <!-- <span class="popup-close" id="closePopup">&times;</span> -->
+                            <div class="popup-content">
+                                <img src="../../static/img/tickmark-icon.svg" class="popup-img" alt="">
+                                <h3 class="popup-heading">Card Add Successfully</h3>
+                                <p class="popup-text">You should freeze your card with <br> your bank until it's
+                                    recovered <br> or
+                                    matched</p>
+                                <button class="btn-popup btn-active" id="submitButton">Done</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const expiryDateInput = document.getElementById("expiryDate");
+
+                expiryDateInput.addEventListener("input", function () {
+                    const inputValue = this.value;
+
+                    // Remove non-numeric characters
+                    const cleanedValue = inputValue.replace(/[^0-9]/g, '');
+
+                    // Format MM/YY
+                    if (cleanedValue.length >= 2) {
+                        let month = cleanedValue.slice(0, 2);
+                        let year = cleanedValue.slice(2);
+
+                        // Limit month to 12
+                        if (parseInt(month) > 12) {
+                            month = '12';
+                            alert('Please enter a valid month (1-12).');
+                        }
+
+                        // Ensure year is not more than 2 digits
+                        if (year.length > 2) {
+                            year = year.slice(0, 2);
+                        }
+
+                        this.value = month + (year.length > 0 ? '/' + year : '');
+                    } else {
+                        this.value = cleanedValue;
+                    }
+                });
+            });
+
+        </script>
+        <script>
+            // Get references to the popup elements
+            const popupOverlay = document.getElementById('popupOverlay');
+            const popupModal = document.getElementById('popupModal');
+            const openPopupButton = document.getElementById('openPopup');
+            const closePopupButton = document.getElementById('closePopup');
+
+            // Function to open the popup
+            function openPopup() {
+                popupOverlay.style.display = 'block';
+                popupModal.style.display = 'block';
+            }
+
+            // Function to close the popup
+            function closePopup() {
+                popupOverlay.style.display = 'none';
+                popupModal.style.display = 'none';
+            }
+
+            // Event listeners for opening and closing the popup
+            openPopupButton.addEventListener('click', openPopup);
+            closePopupButton.addEventListener('click', closePopup);
+            popupOverlay.addEventListener('click', closePopup);
+        </script>
+
+
+        <script>
+            // Function to open the popup
+            function openPopup() {
+                const popup = document.getElementById('popupModal');
+                const overlay = document.getElementById('popupOverlay');
+                popup.style.display = 'block';
+                overlay.style.display = 'block';
+
+                // Add a click event listener to the overlay to close the popup
+                overlay.addEventListener('click', closePopup);
+            }
+
+            // Function to close the popup and hide the overlay
+            function closePopup() {
+                const popup = document.getElementById('popupModal');
+                const overlay = document.getElementById('popupOverlay');
+                popup.style.display = 'none';
+                overlay.style.display = 'none';
+
+                // Remove the click event listener from the overlay
+                overlay.removeEventListener('click', closePopup);
+
+            }
+
+            // Add click event listeners to the Open and Submit buttons
+            const openButton = document.getElementById('openPopup');
+            openButton.addEventListener('click', openPopup);
+
+            submitButton.addEventListener('click', closePopup);
+        </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../../static/css/profle.css">
+</head>
+
+<body>
+    <div class="container-login">
+        <div class="row row-height">
+            <div class="col-lg-6 col-md-6 d-none d-md-block image-container">
+                <div class="logo-middle h-100"><img src="../../static/img/logo.png" alt=""></div>
+            </div>
+            <div class="col-lg-6 col-md-6 form-container">
+                <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
+                    <div class="heading">
+                        <h1>Create Profile</h1>
+                    </div>
+                    <div class="paragraph">
+                        <p>Enter your personal information below</p>
+                    </div>
+                    <div class="profile-pic">
+                        <div class="circle">
+                            <img src="../../static/img/create-profile.png" alt="">
+                        </div>
+                        <div class="small-circle">
+                            <!-- <i class="fas fa-camera"></i> -->
+                            <img src="../../static/img/cam.svg" alt="">
+                        </div>
+                    </div>
+
+                    <form>
+                        <label for="text" class="label-input">Full Name</label>
+                        <div class="form-input">
+                            <span class="icon-input"><img src="../../static/img/name.svg" alt="" style="width: 65%;"></span>
+                            <input type="text" id="text" placeholder="Enter your name" required>
+                        </div>
+                        <label for="number" class="label-input">Phone Number</label>
+                        <div class="form-input">
+                            <span class="icon-input"><img src="../../static/img/phone.svg" alt="" style="width: 65%;"></span>
+                            <input type="number" id="number" placeholder="123 456 7890" required>
+                        </div>
+                        <label for="email" class="label-input">Date of Birth</label>
+                        <div class="form-input">
+                            <span class="icon-input"><img src="../../static/img/calender.svg" alt="" style="width: 65%;"></span>
+                            <input type="date" id="date" placeholder="" required>
+                        </div>
+                        <label for="email" class="label-input">Email/Phone</label>
+                        <div class="form-input">
+                            <span class="icon-input"><img src="../../static/img/email.svg" alt="" style="width: 55%;"></span>
+                            <input type="email" id="email" placeholder="email@domain.com" required>
+                        </div>
+                        <label for="text" class="label-input">Address</label>
+                        <div class="form-input">
+                            <span class="icon-input"><img src="../../static/img/location.svg" alt="" style="width: 55%;"></span>
+                            <input type="text" id="text" placeholder="1901 Thornridge Cir. Shiloh, Hawaii 81063"
+                                required>
+                        </div>
+                        <div class="login-button mt-1">
+                            <button type="submit" class="btn-login">Create Profile</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
