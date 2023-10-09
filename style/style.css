@@ -1,9 +1,16 @@
 @font-face {
     font-family: "redHat-Regular";
-    src: url("../font/RedHatDisplay-Regular.ttf");
+    src: url("../static/font/Poppins-Regular.ttf");
     font-weight: 'regular';
     font-style: normal;
 }
+@font-face {
+    font-family: "redHat-Bold";
+    src: url("../static/font/Poppins-Bold.ttf");
+    font-weight: 'bold';
+    font-style: normal;
+}
+
 
 
 body {
