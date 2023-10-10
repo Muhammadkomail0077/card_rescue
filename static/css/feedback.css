@@ -4,6 +4,12 @@
     font-weight: 'regular';
     font-style: normal;
 }
+@font-face {
+    font-family: "redHat-Bold";
+    src: url("../font/RedHatDisplay-Bold.ttf");
+    font-weight: 'bold';
+    font-style: normal;
+}
 
 
 body {
