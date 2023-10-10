@@ -21,10 +21,12 @@ section {
     color: #0B105C;
     font-weight: bold;
     text-align: center;
+    overflow-y: hidden;
 }
 
 .heading-sub {
     font-family: 'myFont-red-hat';
+    overflow-y: hidden;
     font-size: 16px;
     color: #0B105C;
     font-weight: bold;
