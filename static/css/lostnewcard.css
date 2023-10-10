@@ -191,27 +191,6 @@ body {
     margin-left: 42px;
 }
 
-/* .btn-main {
-    background: linear-gradient(#F9B401 0%, #FCDD8E 200%);
-    outline: none;
-    border: #F9B401;
-    color: #0B105C;
-    margin: 10px;
-    font-weight: 600;
-    font-family: 'redHat-Regular';
-    font-size: 16px;
-} */
-
-/* .btn {
-    border: none;
-    color: #0B105C;
-    width: 233.16px;
-    height: 44px;
-    font-weight: 600;
-    font-family: 'redHat-Regular';
-    font-size: 16px;
-} */
-
 input[type="text"],
 input[type="email"],
 input[type="password"],

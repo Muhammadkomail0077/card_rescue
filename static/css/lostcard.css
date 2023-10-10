@@ -251,17 +251,6 @@ body {
     margin-left: 42px;
 }
 
-.btn {
-    /* background: none; */
-    /* outline: none; */
-    border: none;
-    color: #0B105C;
-    width: 185.16px;
-    height: 44px;
-    font-weight: 600;
-    font-family: 'redHat-Regular';
-    font-size: 16px;
-}
 
 .btn {
     background: linear-gradient(180deg, #F9B401 0%, #FCDD8E 100%);
@@ -272,13 +261,39 @@ body {
     font-weight: 600;
     font-family: 'redHat-Regular';
     font-size: 16px;
+    width: 185.16px;
+    height: 44px;
+}
+.btn:hover {
+    background: linear-gradient(180deg, #F9B401 0%, #FCDD8E 100%);
+    outline: none;
+    border: #F9B401;
+    color: #0B105C;  
+    margin: 10px;
+    font-weight: 600;
+    font-family: 'redHat-Regular';
+    font-size: 16px;
+}
+.link-btn{
+    text-decoration: none;
+color: #0B105C;  
+}
+.btn:active {
+    background: linear-gradient(180deg, #F9B401 0%, #FCDD8E 100%);
+    outline: none;
+    border: #F9B401;
+    color: #0B105C;  
+    margin: 10px;
+    font-weight: 600;
+    font-family: 'redHat-Regular';
+    font-size: 16px;
 }
 
 .btn-active {
     background: linear-gradient(180deg, #F9B401 0%, #FCDD8E 100%);
     outline: none;
     border: #F9B401;
-    color: #0B105C;
+    color: #0B105C;  
     font-family: 'redHat-Regular';
 }
 

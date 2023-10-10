@@ -16,6 +16,10 @@ body {
     width: 100%;
     padding: 0px 45px;
 }
+.btn-link{
+    text-decoration: none;
+    color: white;
+}
 
 /* .container {
     max-width: 100%;
@@ -280,6 +284,12 @@ hr {
 }
 
 .btn:active {
+    background: linear-gradient(180deg, #0B105C 0%, #407BFF 100%);
+    outline: none;
+    border: #0B105C;
+    color: white;
+}
+.btn:hover {
     background: linear-gradient(180deg, #0B105C 0%, #407BFF 100%);
     outline: none;
     border: #0B105C;

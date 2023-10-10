@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'myFont-red-hat';
-    src: url('../fonts/RedHatDisplay-Medium.ttf');
+    src: url('../font/RedHatDisplay-Medium.ttf');
 }
 
 @font-face {
     font-family: 'myFont-poppins';
-    src: url('../fonts/Poppins-Regular.ttf');
+    src: url('../font/Poppins-Regular.ttf');
 }
 
 * {

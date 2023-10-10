@@ -27,7 +27,8 @@
 					<form>
 						<label for="email" class="label-input">Email/Phone</label>
 						<div class="form-input">
-                            <span class="icon-input"><img src="../../static/img/email.svg" alt="" style="width: 55%;"></span>
+							<span class="icon-input"><img src="../../static/img/email.svg" alt=""
+									style="width: 55%;"></span>
 							<input type="email" id="email" placeholder="username" required>
 						</div>
 						<label for="password" class="label-input">Password</label>
@@ -42,7 +43,7 @@
 							<input type="password" id="pass" placeholder="confirm password" required>
 							<span class="pass-icon"><img src="../../static/img/eye-off.svg" alt="" width="75%"></span>
 						</div>
-						
+
 						<div class="row mt-2 mb-2">
 							<div class="d-flex right mt-2">
 								Forget password?
@@ -55,7 +56,7 @@
 						<div class="login-button mb-2">
 							<button type="button" class="btn-login" id="open-popup">Sign Up</button>
 						</div>
-						
+
 						<div id="popup" class="popup">
 							<div class="popup-content">
 								<p>Dummy Popup Data</p>
@@ -63,7 +64,7 @@
 								<button type="button" id="close-popup">Close</button>
 							</div>
 						</div>
-						
+
 
 						<div class="sign">Already have an account?
 							<a href="#">Login</a>
@@ -76,23 +77,23 @@
 
 	<script>
 		// Get the elements
-var openPopupButton = document.getElementById('open-popup');
-var closePopupButton = document.getElementById('close-popup');
-var popup = document.getElementById('popup');
+		var openPopupButton = document.getElementById('open-popup');
+		var closePopupButton = document.getElementById('close-popup');
+		var popup = document.getElementById('popup');
 
-// Function to open the popup
-function openPopup() {
-    popup.style.display = 'block';
-}
+		// Function to open the popup
+		function openPopup() {
+			popup.style.display = 'block';
+		}
 
-// Function to close the popup
-function closePopup() {
-    popup.style.display = 'none';
-}
+		// Function to close the popup
+		function closePopup() {
+			popup.style.display = 'none';
+		}
 
-// Add event listeners
-openPopupButton.addEventListener('click', openPopup);
-closePopupButton.addEventListener('click', closePopup);
+		// Add event listeners
+		openPopupButton.addEventListener('click', openPopup);
+		closePopupButton.addEventListener('click', closePopup);
 
 	</script>
 </body>
