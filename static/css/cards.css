@@ -2,10 +2,94 @@
     font-family: 'myFont-red-hat';
     src: url('../font/RedHatDisplay-Medium.ttf');
 }
+@font-face {
+    font-family: 'myFont-redHat-Bold';
+    src: url('../font/RedHatDisplay-Bold.ttf');
+}
 
 @font-face {
     font-family: 'myFont-poppins';
     src: url('../font/Poppins-Regular.ttf');
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 312px;
+    height: 262px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    border-radius: 20px;
+}
+
+/* Styles for the overlay background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* ------------POPUP------------- */
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+    width: 256px;
+    position: relative;
+    left: 25px;
+    top: 50px;
+}
+
+
+
+.popup-text {
+    font-family: 'redHat-Regular';
+    font-weight: 400;
+    font-size: 18px;
+    color: #0B105C;
+    text-align: center;
+    
+    position: relative;
+    width: 256px;
+    height: 72px;
+}
+
+.btn-popup {
+    background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
+    width: 272px;
+    height: 36px;
+    outline: none;
+    border: #f9b401;
+    color: #0b105c;
+    margin: 10px;
+    font-weight: 600;
+    font-family: "myFont-red-hat";
+    font-size: 16px;
+  }
+  
+.popup-img{
+  width: 70px;
+  Height: 69.99px;
+  margin-bottom: 16px;
+}
+
+.popup-heading{
+  font-size: 20px;
+  font-family: 'myFont-redHat-Bold';
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
 }
 
 * {
