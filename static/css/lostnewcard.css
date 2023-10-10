@@ -226,6 +226,8 @@ label {
 
 .custom-select select {
     border: none;
+    font-family: 'redHat-Regular';
+
     border-radius: 0;
     /* border-bottom: 1px solid #ccc; */
     padding: 8px;
@@ -246,6 +248,8 @@ label {
     border-bottom: 1px solid #ccc;
     outline: none;
     width: 674.57px;
+    font-family: 'redHat-Regular';
+
 }
 
 
