@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'myFont-red-hat';
+    src: url('../font/RedHatDisplay-Medium.ttf');
+    font-weight: 'regular';
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myFont-poppins';
+    src: url('../font/Poppins-Light.ttf');
+}
+
+* {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+
+.circle {
+    width: 156.03px;
+    height: 156.03px;
+    border: 2px solid #1C1C1C;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.circle img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: 130%;
+    object-fit: cover;
+}
+
+.small-circle {
+    position: absolute;
+    z-index: 9999;
+    top: 101px;
+    left: 263px;
+    width: 50px;
+    font-size: 27px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    position: relative;
+    top: 15px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item .icons {
+    filter: invert(0);
+    /* Invert the colors */
+    transition: filter 0.3s ease;
+    /* Add transition for smooth effect */
+}
+
+.nav-item:hover .icons {
+    filter: invert(1);
+    /* Invert the colors on hover */
+}
+
+
+
+.nav-item .nav-link.icons {
+    fill: #ccc;
+    /* Set initial color */
+}
+
+/* For Webkit browsers (like Chrome, Safari) */
+.popup::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+
+.form-container {
+    /* position: relative; */
+    /* margin-top: 3%; */
+    display: flex;
+    justify-content: center;
+    /* min-width: 1500px; */
+    /* top: 10%; */
+    align-items: center;
+}
+
+.text-center {
+    text-align: center !important;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-width: 1500px;
+    /* margin-top: 5%; */
+    /* position: relative; */
+    /* top: 10%; */
+}
+
+.heading {
+    overflow-y: hidden;
+}
+
+h1 {
+    font-family: 'myFont-red-hat';
+    font-size: 30px;
+    font-weight: bold;
+    /* height: auto; */
+    overflow-y: hidden;
+    margin-top: 15px;
+}
+
+.paragraph {
+    margin-top: 10px;
+    font-family: 'myFont-poppins';
+    font-size: 16px;
+    width: 305px;
+    height: 24px;
+    color: #7B869E;
+    margin-bottom: 8px;
+    overflow-y: hidden;
+}
+
+form {
+    /* margin-top: 1%; */
+}
+
+.icon-input {
+    width: 10%;
+}
+
+.label-input {
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: -4%;
+    margin-top: 4%;
+    font-family: 'myFont-red-hat';
+    color: #7B869E;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="number"] {
+    border: none;
+    align-items: start;
+    display: flex;
+    justify-content: start;
+    background: none;
+    /* border-bottom: 1px solid #808184; */
+    outline: none;
+    width: 383px;
+    /* width: 320.1px; */
+    height: 70.53px;
+    color: #1C1C1C;
+    font-family: 'myFont-red-hat';
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+input[type="date"] {
+    border: none;
+    /* align-items: start; */
+    display: flex;
+    justify-content: start;
+    background: none;
+    /* border-bottom: 1px solid #808184; */
+    outline: none;
+    width: 383px;
+    /* width: 320.1px; */
+    height: 70.53px;
+    color: #1C1C1C;
+    font-family: 'myFont-red-hat';
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border-bottom: 1px solid #808184;
+    outline: none;
+    width: 384.73px;
+}
+
+.btn-login {
+    padding: 10px 20px;
+    background: linear-gradient(-8deg, #F9B401 0%, #FCDD8E 100%);
+    color: #0B105C;
+    border: none;
+    width: 383px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 4.53px;
+    margin-bottom: 5%;
+    font-family: 'myFont-red-hat';
+    margin-top: 6%;
+    font-weight: bold;
+}
+
+.image-container {
+    /* background: url('../img/Asset\ 1\ 1.png') center no-repeat; */
+    background-size: cover;
+    background-color: #F9B401;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.row-height {
+    height: 100vh;
+}
+
+
+.logo-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 955px) {
+    .image-container {
+        display: none !important;
+    }
+
+    .row-height {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
