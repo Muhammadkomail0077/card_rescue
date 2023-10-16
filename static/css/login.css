@@ -131,6 +131,7 @@ input[type="password"] {
   font-family: 'myFont-red-hat';
   font-size: 16px;
   opacity: 1;
+  margin-top: 80px
 }
 
 input[type="email"]:hover {

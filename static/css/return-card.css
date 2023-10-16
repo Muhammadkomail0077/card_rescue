@@ -66,20 +66,27 @@ body {
 .icons {
     padding-right: 10px;
     /* fill: white; Change color to white on hover */
-    transition: fill 0.3s ease; /* Add transition for smooth color change */
+    transition: fill 0.3s ease;
+    /* Add transition for smooth color change */
 }
+
 .nav-item .icons {
-    filter: invert(0); /* Invert the colors */
-    transition: filter 0.3s ease; /* Add transition for smooth effect */
+    filter: invert(0);
+    /* Invert the colors */
+    transition: filter 0.3s ease;
+    /* Add transition for smooth effect */
 }
 
 .nav-item:hover .icons {
-    filter: invert(1); /* Invert the colors on hover */
+    filter: invert(1);
+    /* Invert the colors on hover */
 }
 
 .nav-item .nav-link.icons {
-    fill: #ccc; /* Set initial color */
+    fill: #ccc;
+    /* Set initial color */
 }
+
 /* For Webkit browsers (like Chrome, Safari) */
 .popup::-webkit-scrollbar {
     width: 6px;
@@ -116,6 +123,20 @@ body {
     color: white;
 }
 
+.btn-popup {
+    width: 272px;
+    height: 36px;
+    background: linear-gradient(180deg, #F9B401 0%, #FCDD8E 100%);
+    outline: none;
+    border: #F9B401;
+    color: #0B105C;
+    /* margin: 37px; */
+    font-weight: 600;
+    font-family: 'redHat-Regular';
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
 
 .white-bg {
     background-color: #fff;
@@ -245,12 +266,12 @@ body {
     /* justify-content: ; */
 }
 
+/* 
 .multi-buttons {
     margin-top: 55px;
-    /* width: 100%; */
     margin-bottom: 50px;
     margin-left: 42px;
-}
+} */
 
 .btn {
     /* background: none; */
@@ -281,8 +302,13 @@ body {
     border: #F9B401;
     color: #0B105C;
     font-family: 'redHat-Regular';
+    width: 422.02px;
+
 }
 
+.btn-active:hover {
+    color: #0B105C;
+}
 
 .popup {
     display: none;
@@ -322,7 +348,7 @@ body {
     width: 256px;
     position: relative;
     left: 40px;
-    bottom: -26px;
+    top: 56px;
 }
 
 
@@ -339,14 +365,15 @@ body {
 }
 
 .popup-heading {
-    text-align: start;
+    text-align: center;
     color: #0B105C;
     width: 263px;
     font-family: 'redHat-Regular';
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 10px;
     margin-bottom: 16px;
+
 }
 
 .popup-img {
@@ -442,7 +469,8 @@ body {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-.cards-row{
+
+.cards-row {
     width: 100%;
 }
 
@@ -464,11 +492,12 @@ body {
         margin-bottom: 15px;
         margin-right: 0;
     }
-    .navbar{
+
+    .navbar {
         height: 100%;
         width: 17%;
     }
-   
+
     .main-card {
         display: flex;
         justify-content: space-between;
@@ -517,10 +546,11 @@ body {
 }
 
 @media(max-width:1037px) {
-    .same-cards{
+    .same-cards {
         width: 100%;
     }
 }
+
 /* @media(max-width:1920px) {
     .white-bg {
         background-color: #fff;

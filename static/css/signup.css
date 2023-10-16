@@ -1,12 +1,21 @@
 @font-face {
   font-family: 'myFont-red-hat';
   src: url('../font/RedHatDisplay-Medium.ttf');
+  font-weight: 'regular';
+  font-style: normal;
+}
+@font-face {
+  font-family: 'redHat-Regular';
+  src: url('../font/RedHatDisplay-Regular.ttf');
+  font-weight: 'regular';
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'myFont-poppins';
   src: url('../font/Poppins-Light.ttf');
 }
+
 
 * {
   overflow-x: hidden;
@@ -33,7 +42,31 @@
 }
 
 
+.popup-text {
+  font-family: 'redHat-Regular';
+
+}
+
 .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 838px;
+  height: 490px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 20px;
+  padding: 8px 6px;
+  overflow-y: hidden;
+
+}
+
+/* Styles for the overlay background */
+.overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -41,27 +74,85 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 999;
 }
+
 
 .popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+
 }
 
-#close-popup {
-  background-color: #ccc;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
+
+
+.popup-text {
+  font-family: 'redHat-Regular';
+  font-weight: 400;
+  font-size: 18px;
+  color: #0B105C;
+  text-align: center;
+  width: 681px;
+  height: 320px;
 }
+
+.popup-heading {
+  text-align: center;
+  color: #0B105C;
+  width: 263px;
+  font-family: 'redHat-Regular';
+  font-weight: 700;
+  font-size: 30px;
+  overflow-y: hidden;
+  margin-top: 24px;
+  margin-bottom: 16px;
+
+}
+
+.popup-img {
+  width: 70px;
+  height: 69.99px;
+  position: relative;
+  top: -12.4px;
+  /* bottom:300px ; */
+}
+
+.pop_btn1 {
+  /* background: none; */
+  /* outline: none; */
+  border: none;
+  color: #0B105C;
+  width: 139px;
+  margin: 10px;
+  text-align: center;
+  background: #0B105C33;
+  height: 36px;
+  font-weight: 600;
+  font-family: 'redHat-Regular';
+  /* font-size: 16px; */
+  border-radius: 7px;
+  margin-top: 29px;
+}
+
+.pop_btn2 {
+  /* background: none; */
+  /* outline: none; */
+  border: none;
+  color: #0B105C;
+  width: 139px;
+  margin: 10px;
+  background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
+  height: 36px;
+  font-weight: 600;
+  font-family: 'redHat-Regular';
+  /* font-size: 16px; */
+  border-radius: 7px;
+  margin-top: 29px;
+}
+
 
 
 
@@ -160,6 +251,19 @@ input[type="password"] {
   font-weight: bold;
 }
 
+.pop-btn {
+  position: relative;
+  bottom: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.button-a {
+  text-decoration: none;
+  color: #0B105C;
+}
+
 .sign {
   margin-top: 10%;
   align-items: center;
@@ -168,6 +272,7 @@ input[type="password"] {
   font-family: 'myFont-red-hat';
   font-size: 16px;
   opacity: 1;
+  margin-top: 80px
 }
 
 input[type="email"]:hover {

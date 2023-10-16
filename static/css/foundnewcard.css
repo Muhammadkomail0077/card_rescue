@@ -14,6 +14,16 @@ body {
     padding: 0px;
 }
 
+#card-type option {
+    font-family: 'redHat-Regular';
+    color: #1C1C1C;
+}
+#card-type {
+    font-family: 'redHat-Regular';
+    color: #1C1C1C;
+}
+
+
 .container-custom {
     width: 100%;
     padding: 0px 45px;
@@ -63,20 +73,27 @@ body {
 .icons {
     padding-right: 10px;
     /* fill: white; Change color to white on hover */
-    transition: fill 0.3s ease; /* Add transition for smooth color change */
+    transition: fill 0.3s ease;
+    /* Add transition for smooth color change */
 }
+
 .nav-item .icons {
-    filter: invert(0); /* Invert the colors */
-    transition: filter 0.3s ease; /* Add transition for smooth effect */
+    filter: invert(0);
+    /* Invert the colors */
+    transition: filter 0.3s ease;
+    /* Add transition for smooth effect */
 }
 
 .nav-item:hover .icons {
-    filter: invert(1); /* Invert the colors on hover */
+    filter: invert(1);
+    /* Invert the colors on hover */
 }
 
 .nav-item .nav-link.icons {
-    fill: #ccc; /* Set initial color */
+    fill: #ccc;
+    /* Set initial color */
 }
+
 /* For Webkit browsers (like Chrome, Safari) */
 .popup::-webkit-scrollbar {
     width: 6px;
@@ -277,7 +294,8 @@ label {
     /* justify-content: space-between; */
     width: 674.57px;
 }
-.width{
+
+.width {
     width: 20%;
 }
 
@@ -370,13 +388,14 @@ input {
     top: -12.4px;
     /* bottom:300px ; */
 }
+
 .btn-popup {
     background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
 
     border: none;
     color: #0B105C;
     Width: 272px;
-    Height:36px;
+    Height: 36px;
     font-weight: 600;
     font-family: 'redHat-Regular';
     border-radius: 7px;
@@ -395,6 +414,7 @@ input {
     border-radius: 7px;
     margin-top: 29px;
 }
+
 .input-container {
     position: relative;
     /* margin-bottom: 15px; */
@@ -405,7 +425,8 @@ input {
     left: 0px;
     top: 40%;
     transform: translateY(-50%);
-    color: #ccc; /* Icon color */
+    color: #ccc;
+    /* Icon color */
     width: 24px;
     height: 24px;
     /* margin-right: 5px; */
@@ -413,44 +434,51 @@ input {
 
 #password {
     padding-left: 30px;
-     /* Adjust the left padding to accommodate the icon */
+    /* Adjust the left padding to accommodate the icon */
 }
 
-#password:focus + .input-icon {
-    color: #007bff; /* Highlight color when input is focused */
+#password:focus+.input-icon {
+    color: #007bff;
+    /* Highlight color when input is focused */
 }
 
-.coustom-label{
+.coustom-label {
     padding-left: 31px;
 }
-.input-mycard{
+
+.input-mycard {
     position: absolute;
     left: 0px;
     top: 40%;
     transform: translateY(-50%);
-    color: #ccc; /* Icon color */
+    color: #ccc;
+    /* Icon color */
     width: 24px;
     height: 24px;
 }
 
-.input-icon-date{
+.input-icon-date {
     position: absolute;
     left: 0px;
     top: 61%;
     transform: translateY(-50%);
-    color: #ccc; /* Icon color */
+    color: #ccc;
+    /* Icon color */
     width: 24px;
     height: 24px;
 }
-.input-icon-cvv{
+
+.input-icon-cvv {
     position: absolute;
     /* left: 20px; */
     top: 61%;
     transform: translateY(-50%);
-    color: #ccc; /* Icon color */
+    color: #ccc;
+    /* Icon color */
     width: 24px;
     height: 24px;
 }
+
 @media (max-width: 1200px) {
 
     .navbar-vertical.custom-sidebar {
@@ -551,6 +579,7 @@ input {
         transform: translateY(-50%);
         pointer-events: none;
     }
+
     .input-icon-date {
         position: absolute;
         left: 0px;
@@ -560,12 +589,14 @@ input {
         width: 24px;
         height: 24px;
     }
+
     .input-group {
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
     }
+
     .input-icon-cvv {
         position: absolute;
         right: 0%;
@@ -578,11 +609,12 @@ input {
         /* margin: 10px; */
     }
 
-    
-    
-   
+
+
+
 }
-@media(max-width:1080px){
+
+@media(max-width:1080px) {
     .input-icon-cvv {
         position: absolute;
         right: 0%;
@@ -595,7 +627,8 @@ input {
         /* margin: 10px; */
     }
 }
-@media(max-width:1035px){
+
+@media(max-width:1035px) {
     .input-icon-cvv {
         position: absolute;
         right: 0%;
@@ -607,6 +640,7 @@ input {
         height: 24px;
         /* margin: 10px; */
     }
+
     .input-icon-date {
         position: absolute;
         left: 0px;

@@ -94,6 +94,41 @@
             return otp;
         }
     </script>
+
+   <script>
+    const otpFields = document.querySelectorAll(".otp-input");
+
+otpFields.forEach((field, index) => {
+    field.addEventListener("input", (event) => {
+        if (event.target.value.length === 1) {
+            if (index < otpFields.length - 1) {
+                otpFields[index + 1].focus();
+            } else {
+                if (isOTPFilled()) {
+                    window.location.href = './create-profile.html';
+                }
+            }
+        } else if (event.target.value.length === 0) {
+            if (index > 0) {
+                otpFields[index - 1].focus();
+            }
+        }
+    });
+
+    field.addEventListener("keydown", (event) => {
+        if (event.key === "Backspace" && event.target.value.length === 0) {
+            if (index > 0) {
+                otpFields[index - 1].focus();
+            }
+        }
+    });
+});
+
+function isOTPFilled() {
+    return Array.from(otpFields).every(field => field.value.length === 1);
+}
+
+   </script>
 </body>
 
 </html>
