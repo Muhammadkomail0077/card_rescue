@@ -338,7 +338,12 @@
   .checkbox-color .mm-checkbox {
     margin-left: -155px;
   }
-  
+  .btn:hover{
+    color: #000;
+  }
+  .btn:active{
+    color: #000;
+  }
   @media (min-width: 1500px) {
     .container {
       max-width: 1673px;
@@ -385,6 +390,7 @@
       width: 100%;
       text-align: center;
     }
+   
   
     .same-cards {
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

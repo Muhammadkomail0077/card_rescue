@@ -323,14 +323,16 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 376px;
-    height: 332px;
+    width: 350px;
+    height: 277px;
     background-color: #fff;
     border: 1px solid #ccc;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     border-radius: 20px;
+    padding: 8px 6px;
 }
+
 
 /* Styles for the overlay background */
 .overlay {
@@ -344,7 +346,6 @@ input {
     z-index: 999;
 }
 
-
 .popup-content {
     display: flex;
     flex-direction: column;
@@ -353,11 +354,9 @@ input {
     /* height: 100%; */
     width: 256px;
     position: relative;
-    left: 56px;
-    top: 50px;
-
+    left: 40px;
+    bottom: -26px;
 }
-
 
 
 .popup-text {
@@ -371,14 +370,16 @@ input {
     /* height: 72px; */
 }
 
+
 .popup-heading {
-    text-align: center;
+    text-align: start;
     color: #0B105C;
-    width: 212px;
+    width: 263px;
     font-family: 'redHat-Regular';
     font-weight: 700;
-    font-size: 20px;
-    /* margin-bottom: 70px; */
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 16px;
 }
 
 .popup-img {
@@ -388,7 +389,22 @@ input {
     top: -12.4px;
     /* bottom:300px ; */
 }
-
+.pop_btn1 {
+    /* background: none; */
+    /* outline: none; */
+    border: none;
+    color: #0B105C;
+    width: 139px;
+    margin: 10px;
+    text-align: center;
+    background: #0B105C33;
+    height: 36px;
+    font-weight: 600;
+    font-family: 'redHat-Regular';
+    /* font-size: 16px; */
+    border-radius: 7px;
+    margin-top: 29px;
+}
 .btn-popup {
     background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
 
@@ -401,7 +417,30 @@ input {
     border-radius: 7px;
     margin-top: 44px;
 }
+.pop_btn2 {
+    /* background: none; */
+    /* outline: none; */
+    border: none;
+    color: #0B105C;
+    width: 139px;
+    margin: 10px;
+    background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
+    height: 36px;
+    font-weight: 600;
+    font-family: 'redHat-Regular';
+    /* font-size: 16px; */
+    border-radius: 7px;
+    margin-top: 29px;
+}
+.pop_btn_set {
+    display: flex;
+    flex-direction: row;
+}
 
+.num-container2 {
+    position: relative;
+    width: 280px;
+}
 .btn-main {
     background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
 
@@ -420,6 +459,13 @@ input {
     /* margin-bottom: 15px; */
 }
 
+.input-icon2 {
+    position: absolute;
+
+    /* Adjust the left position as needed */
+    top: 34%;
+    transform: translateY(-50%);
+}
 .input-icon {
     position: absolute;
     left: 0px;
@@ -431,7 +477,28 @@ input {
     height: 24px;
     /* margin-right: 5px; */
 }
+.input-field {
+    width: 280px;
+    padding-left: 50px;
+    /* Ensure enough padding for the icon */
+    box-sizing: border-box;
+    height: 64px;
+    /* Adjust the height as needed */
+    border: none;
+    font-size: 16px;
+    font-family: 'redHat-Regular';
+    color: #1C1C1C;
+    border-bottom: 1px solid #4D4D4D;
+    margin-top: 8px;
 
+}
+.pop-semi-heading {
+    margin: 0;
+    padding-left: 50px;
+    font-family: 'redHat-Regular';
+    font-size: 14px;
+    color: #7B869E;
+}
 #password {
     padding-left: 30px;
     /* Adjust the left padding to accommodate the icon */

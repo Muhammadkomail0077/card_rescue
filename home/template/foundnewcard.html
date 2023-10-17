@@ -150,12 +150,21 @@
                         <div class="popup" id="popupModal">
                             <!-- <span class="popup-close" id="closePopup">&times;</span> -->
                             <div class="popup-content">
-                                <img src="../../static/img/tickmark-icon.svg" class="popup-img" alt="">
-                                <h3 class="popup-heading">Card Add Successfully</h3>
-                                <p class="popup-text">You should freeze your card with <br> your bank until it's
-                                    recovered <br> or
-                                    matched</p>
-                                <button class="btn-popup btn-active" id="submitButton">Submit</button>
+                                <!-- <img src="../../static/img/tickmark-icon.svg" class="popup-img" alt=""> -->
+                                <h3 class="popup-heading">When will you destroy the card which is in your
+                                    possession?</h3>
+                                <div class="num-container2">
+                                    <span class="input-icon2">
+                                        <p class="pop-semi-heading">Number Of Days</p>
+                                        <!-- You can replace the content below with your desired icon, e.g., an <i> element for FontAwesome icons -->
+                                        <i><img src="../../static/img/calender.svg" class="pop" alt=""></i>
+                                    </span>
+                                    <input  class="input-field" placeholder="30 Days">
+                                </div>
+                                <div class="pop_btn_set">
+                                    <button class="pop_btn1 btn-active" id="cancelButton">Cancel</button>
+                                    <button class="pop_btn2 btn-active" id="submitButton"><a style="text-decoration: none; color: #0B105C;" href="./foundcard.html">Submit</a></button>
+                                </div>
 
                             </div>
                         </div>
@@ -255,7 +264,40 @@
             submitButton.addEventListener('click', closePopup);
         </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Function to open the popup
+        function openPopup() {
+            const popup = document.getElementById('popupModal');
+            const overlay = document.getElementById('popupOverlay');
+            popup.style.display = 'block';
+            overlay.style.display = 'block';
 
+            // Add a click event listener to the overlay to close the popup
+            overlay.addEventListener('click', closePopup);
+        }
+
+        // Function to close the popup and hide the overlay
+        function closePopup() {
+            const popup = document.getElementById('popupModal');
+            const overlay = document.getElementById('popupOverlay');
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+
+            // Remove the click event listener from the overlay
+            overlay.removeEventListener('click', closePopup);
+        }
+
+        // Add click event listeners to the Open, Cancel, and Submit buttons
+        const openButton = document.getElementById('openPopup');
+        const cancelButton = document.getElementById('cancelButton');
+        const submitButton = document.getElementById('submitButton');
+
+        openButton.addEventListener('click', openPopup);
+        cancelButton.addEventListener('click', closePopup);
+        submitButton.addEventListener('click', closePopup);
+    });
+</script>
 
 
 
