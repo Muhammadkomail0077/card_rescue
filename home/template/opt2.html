@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Rescue | Forget Password</title>
+    <title>Card Rescue | OTP </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,8 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../../static/img/logo.png" type="image/x-icon">
 
-
-    <link rel="stylesheet" href="../../static/css/forgetpassword.css">
+    <link rel="stylesheet" href="../../static/css/otp.css">
 </head>
 
 <body>
@@ -25,33 +24,32 @@
             <div class="col-lg-6 col-md-6 form-container">
                 <div class="col-lg-8 col-md-12 col-sm-9 col-xs-12 form-box text-center">
                     <div class="mb-3">
-                        <img src="../../static/img/forgot-password-icon.png" alt="">
+                        <img src="../../static/img/OTP-icon.png" alt="">
                     </div>
                     <div class="heading">
-                        <h1>Forgot Password</h1>
+                        <h1>OTP</h1>
                     </div>
                     <div class="paragraph">
-                        <p>Please enter your email to
-                            reset password</p>
+                        <p>We have sent you an email containing 6 digits verification code. Please enter the code to
+                            verify your identity</p>
                     </div>
                     <form>
-                        <label for="email" class="label-input">Email/Phone</label>
-                        <div class="form-input">
-                            <span class="icon-input"><img src="../../static/img/email.svg" alt=""
-                                    style="width: 55%;"></span>
-                            <input type="email" id="email" placeholder="email@domain.com" required
-                                style="    height: 50px; margin: 12px 0px">
-                        </div>
-                        <div class="login-button mb-2 mt-2">
-
-                            <button type="submit" class="btn-login"><a href="./opt2.html"
-                                    style="text-decoration: none; color: #0b105c;">Continue</a></button>
-
+                        <div id="otp-container">
+                            <input type="text" class="otp-input" maxlength="1" id="digit1">
+                            <input type="text" class="otp-input" maxlength="1" id="digit2">
+                            <input type="text" class="otp-input" maxlength="1" id="digit3">
+                            <input type="text" class="otp-input" maxlength="1" id="digit4">
+                            <input type="text" class="otp-input" maxlength="1" id="digit5">
+                            <input type="text" class="otp-input" maxlength="1" id="digit6">
                         </div>
                     </form>
+                    <div class="sign">Code didn't receive?
+                        <a href="./newpassword.html">Resend</a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -95,6 +93,41 @@
             });
             return otp;
         }
+    </script>
+
+    <script>
+        const otpFields = document.querySelectorAll(".otp-input");
+
+        otpFields.forEach((field, index) => {
+            field.addEventListener("input", (event) => {
+                if (event.target.value.length === 1) {
+                    if (index < otpFields.length - 1) {
+                        otpFields[index + 1].focus();
+                    } else {
+                        if (isOTPFilled()) {
+                            window.location.href = './newpassword.html';
+                        }
+                    }
+                } else if (event.target.value.length === 0) {
+                    if (index > 0) {
+                        otpFields[index - 1].focus();
+                    }
+                }
+            });
+
+            field.addEventListener("keydown", (event) => {
+                if (event.key === "Backspace" && event.target.value.length === 0) {
+                    if (index > 0) {
+                        otpFields[index - 1].focus();
+                    }
+                }
+            });
+        });
+
+        function isOTPFilled() {
+            return Array.from(otpFields).every(field => field.value.length === 1);
+        }
+
     </script>
 </body>
 

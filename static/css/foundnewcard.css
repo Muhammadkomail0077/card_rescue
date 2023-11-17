@@ -1,211 +1,209 @@
 @font-face {
-    font-family: "redHat-Regular";
-    src: url("../font/RedHatDisplay-Regular.ttf");
-    font-weight: 'regular';
-    font-style: normal;
+  font-family: "redHat-Regular";
+  src: url("../font/RedHatDisplay-Regular.ttf");
+  font-weight: "regular";
+  font-style: normal;
 }
 
-
 body {
-    background-image: url(../img/background-img.png);
-    background: linear-gradient(#F9B401 0%, #FCDD8E 200%);
-    /* background-color: ; */
-    margin: 0px;
-    padding: 0px;
+  background-image: url(../img/background-img.png);
+  background: linear-gradient(#f9b401 0%, #fcdd8e 200%);
+  /* background-color: ; */
+  margin: 0px;
+  padding: 0px;
 }
 
 #card-type option {
-    font-family: 'redHat-Regular';
-    color: #1C1C1C;
+  font-family: "redHat-Regular";
+  color: #1c1c1c;
 }
 #card-type {
-    font-family: 'redHat-Regular';
-    color: #1C1C1C;
+  font-family: "redHat-Regular";
+  color: #1c1c1c;
 }
 
-
 .container-custom {
-    width: 100%;
-    padding: 0px 45px;
+  width: 100%;
+  padding: 0px 45px;
 }
 
 .nav-item {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .fa-solid {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .navbar {
-    width: 14%;
-    height: 100%;
+  width: 14%;
+  height: 100%;
 }
 
 .brand-logo {
-    margin: 53px 0px 61px 24px;
+  margin: 53px 0px 61px 24px;
 }
 
 .navbar-nav {
-    text-align: left;
-    width: 100%;
+  text-align: left;
+  width: 100%;
 }
 
 .navbar-nav .nav-item .nav-link {
-    font-size: 15px;
-    font-family: 'redHat-Regular';
-    font-weight: 600;
-    margin: 0px 0px;
-    padding: 0px 0px 0px 17px;
-    height: 40px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    color: #10234E;
+  font-size: 15px;
+  font-family: "redHat-Regular";
+  font-weight: 600;
+  margin: 0px 0px;
+  padding: 0px 0px 0px 17px;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  color: #10234e;
 }
 
 .card {
-    width: 18rem;
-    margin-top: 21px;
+  width: 18rem;
+  margin-top: 21px;
 }
 
 .icons {
-    padding-right: 10px;
-    /* fill: white; Change color to white on hover */
-    transition: fill 0.3s ease;
-    /* Add transition for smooth color change */
+  padding-right: 10px;
+  /* fill: white; Change color to white on hover */
+  transition: fill 0.3s ease;
+  /* Add transition for smooth color change */
 }
 
 .nav-item .icons {
-    filter: invert(0);
-    /* Invert the colors */
-    transition: filter 0.3s ease;
-    /* Add transition for smooth effect */
+  filter: invert(0);
+  /* Invert the colors */
+  transition: filter 0.3s ease;
+  /* Add transition for smooth effect */
 }
 
 .nav-item:hover .icons {
-    filter: invert(1);
-    /* Invert the colors on hover */
+  filter: invert(1);
+  /* Invert the colors on hover */
 }
 
 .nav-item .nav-link.icons {
-    fill: #ccc;
-    /* Set initial color */
+  fill: #ccc;
+  /* Set initial color */
 }
 
 /* For Webkit browsers (like Chrome, Safari) */
 .popup::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 .navbar-nav .nav-item:hover {
-    font-size: 15px;
-    font-family: 'redHat-Regular';
-    font-weight: 600;
-    color: white;
-    background: linear-gradient(to right, #0B105C, rgba(11, 16, 92, 0));
+  font-size: 15px;
+  font-family: "redHat-Regular";
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, #0b105c, rgba(11, 16, 92, 0));
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    font-size: 15px;
-    font-family: 'redHat-Regular';
-    font-weight: 600;
-    color: white;
-    background: linear-gradient(to right, #0B105C, rgba(11, 16, 92, 0));
+  font-size: 15px;
+  font-family: "redHat-Regular";
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, #0b105c, rgba(11, 16, 92, 0));
 }
 
 .btn-nav {
-    margin-top: 90px;
-    background-color: #0B105C;
-    border-radius: 0 20px 20px 0;
-    height: 56px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
+  margin-top: 90px;
+  background-color: #0b105c;
+  border-radius: 0 20px 20px 0;
+  height: 56px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
 }
 
 .white-bg {
-    background-color: #fff;
-    border-radius: 40px;
-    margin-top: 15px;
-    width: 100%;
-    padding-bottom: 30px;
+  background-color: #fff;
+  border-radius: 40px;
+  margin-top: 15px;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 .head-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .head-para {
-    color: #8B8B8B;
+  color: #8b8b8b;
 }
 
 .heading-hello {
-    font-family: 'redHat-Regular';
-    font-weight: 800;
-    font-size: 30px;
-    color: #0B105C;
-    margin: 0px;
+  font-family: "redHat-Regular";
+  font-weight: 800;
+  font-size: 30px;
+  color: #0b105c;
+  margin: 0px;
 }
 
 .text-sec {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .main-section {
-    display: flex;
+  display: flex;
 }
 
 .notification-badge {
-    position: relative;
-    display: inline-block;
-    margin-right: 25px;
+  position: relative;
+  display: inline-block;
+  margin-right: 25px;
 }
 
 .notification-badge .fas {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .notification-badge .badge {
-    position: absolute;
-    top: -6px;
-    right: -8px;
-    background-color: red;
-    color: white;
-    border: 2px solid white;
-    border-radius: 50%;
-    /* Make it a circle */
-    font-size: 8px;
-    font-family: 'redHat-Regular';
-    font-weight: 700;
-    padding: 2px 4px;
-    /* Adjust padding as needed */
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  /* Make it a circle */
+  font-size: 8px;
+  font-family: "redHat-Regular";
+  font-weight: 700;
+  padding: 2px 4px;
+  /* Adjust padding as needed */
 }
 
 .header-sec {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .buttons {
-    padding: 3px;
-    margin-bottom: 50px;
-    border-radius: 5px;
-    display: flex;
+  padding: 3px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  display: flex;
 }
 
 .multi-buttons {
-    margin-top: 55px;
-    margin-bottom: 50px;
-    margin-left: 42px;
+  margin-top: 55px;
+  margin-bottom: 50px;
+  margin-left: 42px;
 }
 
 /* .btn-main {
@@ -233,494 +231,486 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="number"] {
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #ccc;
-    border-radius: 0;
-    outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0;
+  outline: none;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="number"] {
-    width: 674.57px;
-    margin: 10px 0;
-    font-family: 'redHat-Regular';
-    font-weight: 400;
-    font-size: 16px;
-    padding-left: 31px;
-
+  width: 674.57px;
+  margin: 10px 0;
+  font-family: "redHat-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 31px;
 }
 
 label {
-    display: inline-block;
-    color: #7B869E;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'redHat-Regular';
+  display: inline-block;
+  color: #7b869e;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "redHat-Regular";
 }
 
 .custom-select select {
-    border: none;
-    border-radius: 0;
-    /* border-bottom: 1px solid #ccc; */
-    padding: 8px;
-    outline: none;
-    /* appearance: none; */
-    width: 100%;
+  border: none;
+  border-radius: 0;
+  /* border-bottom: 1px solid #ccc; */
+  padding: 8px;
+  outline: none;
+  /* appearance: none; */
+  width: 100%;
 }
 
 .custom-select {
-    position: relative;
-    display: flex;
-    font-family: 'myFont-red-hat';
-    width: 100%;
-    margin-bottom: 10px;
-    margin: 8px 0;
-    align-items: center;
-    background: none;
-    border-bottom: 1px solid #ccc;
-    outline: none;
-    width: 674.57px;
+  position: relative;
+  display: flex;
+  font-family: "myFont-red-hat";
+  width: 100%;
+  margin-bottom: 10px;
+  margin: 8px 0;
+  align-items: center;
+  background: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  width: 674.57px;
 }
 
-
-
 .input-group {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    width: 674.57px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 674.57px;
 }
 
 .width {
-    width: 20%;
+  width: 20%;
 }
 
 input {
-    flex: 1;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
 }
 
 .input-fileds {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .input-fileds input {
-    width: 270px;
+  width: 270px;
 }
-
 
 .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    height: 277px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    border-radius: 20px;
-    padding: 8px 6px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 277px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 20px;
+  padding: 8px 6px;
 }
-
 
 /* Styles for the overlay background */
 .overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 .popup-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* height: 100%; */
-    width: 256px;
-    position: relative;
-    left: 40px;
-    bottom: -26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+  width: 256px;
+  position: relative;
+  left: 40px;
+  bottom: -26px;
 }
-
 
 .popup-text {
-    font-family: 'redHat-Regular';
-    font-weight: 400;
-    font-size: 18px;
-    color: #0B105C;
-    margin-bottom: -25px;
-    text-align: center;
-    width: 256px;
-    /* height: 72px; */
+  font-family: "redHat-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  color: #0b105c;
+  margin-bottom: -25px;
+  text-align: center;
+  width: 256px;
+  /* height: 72px; */
 }
 
-
 .popup-heading {
-    text-align: start;
-    color: #0B105C;
-    width: 263px;
-    font-family: 'redHat-Regular';
-    font-weight: 700;
-    font-size: 18px;
-    margin-top: 10px;
-    margin-bottom: 16px;
+  text-align: start;
+  color: #0b105c;
+  width: 263px;
+  font-family: "redHat-Regular";
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 16px;
 }
 
 .popup-img {
-    width: 70px;
-    height: 69.99px;
-    position: relative;
-    top: -12.4px;
-    /* bottom:300px ; */
+  width: 70px;
+  height: 69.99px;
+  position: relative;
+  top: -12.4px;
+  /* bottom:300px ; */
 }
 .pop_btn1 {
-    /* background: none; */
-    /* outline: none; */
-    border: none;
-    color: #0B105C;
-    width: 139px;
-    margin: 10px;
-    text-align: center;
-    background: #0B105C33;
-    height: 36px;
-    font-weight: 600;
-    font-family: 'redHat-Regular';
-    /* font-size: 16px; */
-    border-radius: 7px;
-    margin-top: 29px;
+  /* background: none; */
+  /* outline: none; */
+  border: none;
+  color: #0b105c;
+  width: 139px;
+  margin: 10px;
+  text-align: center;
+  background: #0b105c33;
+  height: 36px;
+  font-weight: 600;
+  font-family: "redHat-Regular";
+  /* font-size: 16px; */
+  border-radius: 7px;
+  margin-top: 29px;
 }
 .btn-popup {
-    background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
+  background: linear-gradient(312.67deg, #f9b401 5.15%, #fcdd8e 134.92%);
 
-    border: none;
-    color: #0B105C;
-    Width: 272px;
-    Height: 36px;
-    font-weight: 600;
-    font-family: 'redHat-Regular';
-    border-radius: 7px;
-    margin-top: 44px;
+  border: none;
+  color: #0b105c;
+  width: 272px;
+  height: 36px;
+  font-weight: 600;
+  font-family: "redHat-Regular";
+  border-radius: 7px;
+  margin-top: 44px;
 }
 .pop_btn2 {
-    /* background: none; */
-    /* outline: none; */
-    border: none;
-    color: #0B105C;
-    width: 139px;
-    margin: 10px;
-    background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
-    height: 36px;
-    font-weight: 600;
-    font-family: 'redHat-Regular';
-    /* font-size: 16px; */
-    border-radius: 7px;
-    margin-top: 29px;
+  /* background: none; */
+  /* outline: none; */
+  border: none;
+  color: #0b105c;
+  width: 139px;
+  margin: 10px;
+  background: linear-gradient(312.67deg, #f9b401 5.15%, #fcdd8e 134.92%);
+  height: 36px;
+  font-weight: 600;
+  font-family: "redHat-Regular";
+  /* font-size: 16px; */
+  border-radius: 7px;
+  margin-top: 29px;
 }
 .pop_btn_set {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .num-container2 {
-    position: relative;
-    width: 280px;
+  position: relative;
+  width: 280px;
 }
 .btn-main {
-    background: linear-gradient(312.67deg, #F9B401 5.15%, #FCDD8E 134.92%);
+  background: linear-gradient(312.67deg, #f9b401 5.15%, #fcdd8e 134.92%);
 
-    border: none;
-    color: #0B105C;
-    width: 382px;
-    height: 56px;
-    font-weight: 600;
-    font-family: 'redHat-Regular';
-    border-radius: 7px;
-    margin-top: 29px;
+  border: none;
+  color: #0b105c;
+  width: 382px;
+  height: 56px;
+  font-weight: 600;
+  font-family: "redHat-Regular";
+  border-radius: 7px;
+  margin-top: 29px;
 }
 
 .input-container {
-    position: relative;
-    /* margin-bottom: 15px; */
+  position: relative;
+  /* margin-bottom: 15px; */
 }
 
 .input-icon2 {
-    position: absolute;
+  position: absolute;
 
-    /* Adjust the left position as needed */
-    top: 34%;
-    transform: translateY(-50%);
+  /* Adjust the left position as needed */
+  top: 34%;
+  transform: translateY(-50%);
 }
 .input-icon {
-    position: absolute;
-    left: 0px;
-    top: 40%;
-    transform: translateY(-50%);
-    color: #ccc;
-    /* Icon color */
-    width: 24px;
-    height: 24px;
-    /* margin-right: 5px; */
+  position: absolute;
+  left: 0px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #ccc;
+  /* Icon color */
+  width: 24px;
+  height: 24px;
+  /* margin-right: 5px; */
 }
 .input-field {
-    width: 280px;
-    padding-left: 50px;
-    /* Ensure enough padding for the icon */
-    box-sizing: border-box;
-    height: 64px;
-    /* Adjust the height as needed */
-    border: none;
-    font-size: 16px;
-    font-family: 'redHat-Regular';
-    color: #1C1C1C;
-    border-bottom: 1px solid #4D4D4D;
-    margin-top: 8px;
-
+  width: 280px;
+  padding-left: 50px;
+  /* Ensure enough padding for the icon */
+  box-sizing: border-box;
+  height: 64px;
+  /* Adjust the height as needed */
+  border: none;
+  font-size: 16px;
+  font-family: "redHat-Regular";
+  color: #1c1c1c;
+  border-bottom: 1px solid #4d4d4d;
+  margin-top: 8px;
 }
 .pop-semi-heading {
-    margin: 0;
-    padding-left: 50px;
-    font-family: 'redHat-Regular';
-    font-size: 14px;
-    color: #7B869E;
+  margin: 0;
+  padding-left: 50px;
+  font-family: "redHat-Regular";
+  font-size: 14px;
+  color: #7b869e;
 }
 #password {
-    padding-left: 30px;
-    /* Adjust the left padding to accommodate the icon */
+  padding-left: 30px;
+  /* Adjust the left padding to accommodate the icon */
 }
 
-#password:focus+.input-icon {
-    color: #007bff;
-    /* Highlight color when input is focused */
+#password:focus + .input-icon {
+  color: #007bff;
+  /* Highlight color when input is focused */
 }
 
 .coustom-label {
-    padding-left: 31px;
+  padding-left: 31px;
 }
 
 .input-mycard {
-    position: absolute;
-    left: 0px;
-    top: 40%;
-    transform: translateY(-50%);
-    color: #ccc;
-    /* Icon color */
-    width: 24px;
-    height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 40%;
+  transform: translateY(-50%);
+  color: #ccc;
+  /* Icon color */
+  width: 24px;
+  height: 24px;
 }
 
 .input-icon-date {
-    position: absolute;
-    left: 0px;
-    top: 61%;
-    transform: translateY(-50%);
-    color: #ccc;
-    /* Icon color */
-    width: 24px;
-    height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 61%;
+  transform: translateY(-50%);
+  color: #ccc;
+  /* Icon color */
+  width: 24px;
+  height: 24px;
 }
 
 .input-icon-cvv {
-    position: absolute;
-    /* left: 20px; */
-    top: 61%;
-    transform: translateY(-50%);
-    color: #ccc;
-    /* Icon color */
-    width: 24px;
-    height: 24px;
+  position: absolute;
+  /* left: 20px; */
+  top: 61%;
+  transform: translateY(-50%);
+  color: #ccc;
+  /* Icon color */
+  width: 24px;
+  height: 24px;
+}
+.popup2 {
+  width: 312px;
+  height: 332px;
+  display: none;
 }
 
 @media (max-width: 1200px) {
+  .navbar-vertical.custom-sidebar {
+    width: 24%;
+    /* Expand the sidebar to full width */
+    padding: 0;
+    /* Remove padding for full width */
+  }
 
-    .navbar-vertical.custom-sidebar {
-        width: 24%;
-        /* Expand the sidebar to full width */
-        padding: 0;
-        /* Remove padding for full width */
-    }
+  .navbar-nav {
+    flex-direction: column;
+  }
 
-    .navbar-nav {
-        flex-direction: column;
-    }
+  .nav-item {
+    padding-left: 29px;
+  }
 
-    .nav-item {
-        padding-left: 29px;
-    }
+  .head-para {
+    color: #8b8b8b;
+    font-size: 12px;
+  }
 
-    .head-para {
-        color: #8B8B8B;
-        font-size: 12px;
-    }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+    font-family: "redHat-Regular";
+    font-weight: 600;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    /* Add some vertical padding for readability */
+    height: auto;
+    /* Allow items to adjust height as needed */
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: #10234e;
+  }
 
-    .navbar-nav .nav-item .nav-link {
-        font-size: 15px;
-        font-family: 'redHat-Regular';
-        font-weight: 600;
-        margin: 0px 0px;
-        padding: 10px 0px;
-        /* Add some vertical padding for readability */
-        height: auto;
-        /* Allow items to adjust height as needed */
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        color: #10234E;
-    }
+  .btn-nav {
+    width: 100%;
+    text-align: center;
+  }
 
-    .btn-nav {
-        width: 100%;
-        text-align: center;
-    }
+  .input-fileds input {
+    width: 270px;
+  }
 
-    .input-fileds input {
-        width: 270px;
-    }
+  .navbar {
+    width: 17%;
+    height: 100%;
+  }
 
-    .navbar {
-        width: 17%;
-        height: 100%;
-    }
+  .custom-select {
+    position: relative;
+    /* display: inline-block; */
+    font-family: "redHat-Regular";
+    width: 100%;
+    margin-bottom: 10px;
+    margin: 8px 0;
+  }
 
-    .custom-select {
-        position: relative;
-        /* display: inline-block; */
-        font-family: 'redHat-Regular';
-        width: 100%;
-        margin-bottom: 10px;
-        margin: 8px 0;
-    }
+  input[type="password"],
+  input[type="number"] {
+    width: 173%;
+    margin: 10px 0;
+    font-family: "redHat-Regular";
+    font-weight: 400;
+    font-size: 16px;
+  }
 
-    input[type="password"],
-    input[type="number"] {
-        width: 173%;
-        margin: 10px 0;
-        font-family: 'redHat-Regular';
-        font-weight: 400;
-        font-size: 16px;
-    }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    width: 100%;
+    margin: 10px 0;
+    font-family: "redHat-Regular";
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 31px;
+  }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="password"],
-    input[type="number"] {
-        width: 100%;
-        margin: 10px 0;
-        font-family: 'redHat-Regular';
-        font-weight: 400;
-        font-size: 16px;
-        padding-left: 31px;
-    }
+  .custom-select #select {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    outline: none;
+    appearance: none;
+    width: 100%;
+  }
 
-    .custom-select #select {
-        border: none;
-        border-radius: 0;
-        border-bottom: 1px solid #ccc;
-        padding: 5px;
-        outline: none;
-        appearance: none;
-        width: 100%;
-    }
+  .custom-select::after {
+    /* content: "\f107"; */
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
 
-    .custom-select::after {
-        /* content: "\f107"; */
-        font-family: FontAwesome;
-        position: absolute;
-        top: 50%;
-        right: 50px;
-        transform: translateY(-50%);
-        pointer-events: none;
-    }
+  .input-icon-date {
+    position: absolute;
+    left: 0px;
+    top: 65%;
+    transform: translateY(-50%);
+    color: #ccc;
+    width: 24px;
+    height: 24px;
+  }
 
-    .input-icon-date {
-        position: absolute;
-        left: 0px;
-        top: 65%;
-        transform: translateY(-50%);
-        color: #ccc;
-        width: 24px;
-        height: 24px;
-    }
+  .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 
-    .input-group {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-    .input-icon-cvv {
-        position: absolute;
-        right: 0%;
-        top: 66%;
-        left: 10%;
-        transform: translateY(-50%);
-        color: #ccc;
-        width: 100%;
-        height: 24px;
-        /* margin: 10px; */
-    }
-
-
-
-
+  .input-icon-cvv {
+    position: absolute;
+    right: 0%;
+    top: 66%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: #ccc;
+    width: 100%;
+    height: 24px;
+    /* margin: 10px; */
+  }
 }
 
-@media(max-width:1080px) {
-    .input-icon-cvv {
-        position: absolute;
-        right: 0%;
-        top: 66%;
-        left: 5%;
-        transform: translateY(-50%);
-        color: #ccc;
-        width: 100%;
-        height: 24px;
-        /* margin: 10px; */
-    }
+@media (max-width: 1080px) {
+  .input-icon-cvv {
+    position: absolute;
+    right: 0%;
+    top: 66%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #ccc;
+    width: 100%;
+    height: 24px;
+    /* margin: 10px; */
+  }
 }
 
-@media(max-width:1035px) {
-    .input-icon-cvv {
-        position: absolute;
-        right: 0%;
-        top: 81%;
-        left: -47%;
-        transform: translateY(-50%);
-        color: #ccc;
-        width: 100%;
-        height: 24px;
-        /* margin: 10px; */
-    }
+@media (max-width: 1035px) {
+  .input-icon-cvv {
+    position: absolute;
+    right: 0%;
+    top: 81%;
+    left: -47%;
+    transform: translateY(-50%);
+    color: #ccc;
+    width: 100%;
+    height: 24px;
+    /* margin: 10px; */
+  }
 
-    .input-icon-date {
-        position: absolute;
-        left: 0px;
-        top: 32%;
-        transform: translateY(-50%);
-        color: #ccc;
-        width: 24px;
-        height: 24px;
-    }
+  .input-icon-date {
+    position: absolute;
+    left: 0px;
+    top: 32%;
+    transform: translateY(-50%);
+    color: #ccc;
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media (min-width: 1500px) {
-    .container {
-        max-width: 1673px;
-    }
+  .container {
+    max-width: 1673px;
+  }
 }

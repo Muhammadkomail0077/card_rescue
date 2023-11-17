@@ -34,7 +34,7 @@
                         <label for="card-type" class="label-input">Card Type</label>
                         <div class="custom-select">
                             <span class="icon-input"><img src="../../static/img/credit-card.svg" alt=""></span>
-                            <select id="card-type" name="card-type">
+                            <select id="card-type1" name="card-type">
                                 <option value="credit-card">Credit Card</option>
                                 <option value="debit-card">Debit Card</option>
                                 <option value="prepaid-card">Prepaid Card</option>
@@ -44,7 +44,7 @@
                         <label for="card-type" class="label-input">Issuer</label>
                         <div class="custom-select">
                             <span class="icon-input"><img src="../../static/img/bank-icon.svg" alt=""></span>
-                            <select id="card-type" name="card-type">
+                            <select id="card-type2" name="card-type">
                                 <option value="credit-card">Bank Of America</option>
                                 <option value="debit-card">Debit Card</option>
                                 <option value="prepaid-card">Prepaid Card</option>
@@ -85,30 +85,34 @@
                         <div class="add">
                             <button class="add-cards"></button>
                         </div>
-                        <div class="login-button mt-1">
 
-                            <button class="btn-login"><a style="text-decoration: none; color: #0B105C;"
-                                    id="openPopup">Submit</a></button>
-                            <div class="overlay" id="popupOverlay"></div>
-                            <div class="popup" id="popupModal">
-                                <!-- <span class="popup-close" id="closePopup">&times;</span> -->
-                                <div class="popup-content">
-                                    <img src="../../static/img/tickmark-icon.svg" class="popup-img" alt="">
-                                    <h3 class="popup-heading">Card Add Successfully</h3>
-                                    <!-- <p class="popup-text">You should freeze your card with your bank until it's
-                                               recovered <br>or matched</p> -->
-                                    <button class="btn-popup btn-active" id="submitButton">Done</button>
+                        <button class="btn-login" id="openPopup" type="button">Submit
+                        </button>
 
-                                    <!-- <button class="btn btn-active" id="submitButton">Submit</button> -->
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </form>
-               
                 </div>
+                </form>
+
             </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="overlay" id="popupOverlay"></div>
+    <div class="popup" id="popupModal">
+        <!-- <span class="popup-close" id="closePopup">&times;</span> -->
+        <div class="popup-content">
+            <img src="../../static/img/tickmark-icon.svg" class="popup-img" alt="">
+            <h3 class="popup-heading">Card Add Successfully</h3>
+            <!-- <p class="popup-text">You should freeze your card with your bank until it's
+                       recovered <br>or matched</p> -->
+            <a class="pop-ancer" href="../../index.html">
+                <button class="btn-popup btn-active" id="submitButton">
+                    Done</button>
+            </a>
+
+
+            <!-- <button class="btn btn-active" id="submitButton">Submit</button> -->
+
         </div>
     </div>
     <!-- <script>
