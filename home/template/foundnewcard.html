@@ -170,10 +170,13 @@
                                 <div class="overlay2" id="popupOverlay2"></div>
                                 <div class="popup2" id="uniquePopup2">
                                     <div class="popup-content2">
-                                        <!-- Your popup content goes here -->
-                                        <img src="../../static/img/tickmark-icon.svg" class="popup-img2" alt="">
-                                        <h3 class="popup-heading2">Card Add Successfully</h3>
-                                        <button class="btn-popup2 btn-active" id="submitButton2">Done</button>
+                                        <div class="popup2-set">
+                                            <img src="../../static/img/tickmark-icon.svg" class="popup-img2" alt="">
+                                            <h3 class="popup-heading2">Card Add Successfully</h3>
+                                            <p class="popup2-para">Please destroy the card after 1 month if no match has been found.</p>
+                                            <button class="btn-popup2 btn-active" id="submitButton2">Done</button>
+                                        </div>
+
                                     </div>
                                 </div>
 
@@ -184,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <script>
+        <!-- <script>
             document.addEventListener('DOMContentLoaded', function () {
                 // Function to open the popup
                 function openPopup() {
@@ -217,8 +220,8 @@
                 cancelButton.addEventListener('click', closePopup);
                 submitButton.addEventListener('click', closePopup);
             });
-        </script>
-        <script>
+        </script> -->
+        <!-- <script>
             // Get references to the popup elements
             const popupOverlay = document.getElementById('popupOverlay');
             const popupModal = document.getElementById('popupModal');
@@ -241,10 +244,10 @@
             openPopupButton.addEventListener('click', openPopup);
             closePopupButton.addEventListener('click', closePopup);
             popupOverlay.addEventListener('click', closePopup);
-        </script>
+        </script> -->
 
 
-        <script>
+        <!-- <script>
             // Function to open the popup
             function openPopup() {
                 const popup = document.getElementById('popupModal');
@@ -273,7 +276,7 @@
             openButton.addEventListener('click', openPopup);
 
             submitButton.addEventListener('click', closePopup);
-        </script>
+        </script> -->
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -317,31 +320,31 @@
             // Function to open the unique popup
             function openUniquePopup2() {
                 const uniquePopup = document.getElementById('uniquePopup2');
-                const overlay = document.getElementById('popupOverlay2');
+                const overlay2 = document.getElementById('popupOverlay2');
                 uniquePopup.style.display = 'block';
-                overlay.style.display = 'block';
+                overlay2.style.display = 'block';
 
                 // Add a click event listener to the overlay to close the unique popup
-                overlay.addEventListener('click', closeUniquePopup2);
+                overlay2.addEventListener('click', closePopupIfClickedOutside);
             }
 
             // Function to close the unique popup and hide the overlay
             function closeUniquePopup2() {
                 const uniquePopup = document.getElementById('uniquePopup2');
-                const overlay = document.getElementById('popupOverlay2');
+                const overlay2 = document.getElementById('popupOverlay2');
                 uniquePopup.style.display = 'none';
-                overlay.style.display = 'none';
+                overlay2.style.display = 'none';
 
                 // Remove the click event listener from the overlay
-                overlay.removeEventListener('click', closeUniquePopup2);
+                overlay2.removeEventListener('click', closePopupIfClickedOutside);
             }
 
-            // Function to close the unique popup if clicked outside of the container
+            // Function to close the popups if clicked outside of the container
             function closePopupIfClickedOutside(event) {
                 const uniquePopup = document.getElementById('uniquePopup2');
-                const overlay = document.getElementById('popupOverlay2');
+                const overlay2 = document.getElementById('popupOverlay2');
 
-                if (event.target === overlay) {
+                if (event.target === overlay2) {
                     closeUniquePopup2();
                 }
             }
@@ -353,10 +356,10 @@
             // Add click event listener to the unique popup's "Done" button
             const submitButton2 = document.getElementById('submitButton2');
             submitButton2.addEventListener('click', closeUniquePopup2);
-
-            // Add click event listener to close the unique popup if clicked outside of the container
-            document.addEventListener('click', closePopupIfClickedOutside);
         </script>
+
+
+
 
 </body>
 

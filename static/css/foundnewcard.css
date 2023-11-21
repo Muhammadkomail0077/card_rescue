@@ -4,6 +4,12 @@
   font-weight: "regular";
   font-style: normal;
 }
+@font-face {
+  font-family: "redHat-Bold";
+  src: url("../font/RedHatDisplay-Bold.ttf");
+  font-weight: "regular";
+  font-style: normal;
+}
 
 body {
   background-image: url(../img/background-img.png);
@@ -535,10 +541,65 @@ input {
   width: 24px;
   height: 24px;
 }
+/* ----------------------popup2------------------ */
 .popup2 {
-  width: 312px;
-  height: 332px;
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 332px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1006;
+  border-radius: 20px;
+  padding: 8px 6px;
+}
+#popupOverlay2 {
+  display: none;
+  position: absolute;
+
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 9999;
+}
+.popup-img2 {
+  width: 70px;
+  height: 69.99px;
+  margin-bottom: 18px;
+}
+.popup2-set {
+  align-items: center;
+  text-align: center;
+  padding: 18px 50px;
+}
+.popup-heading2 {
+  font-family: "redHat-Bold";
+  color: #0b105c;
+  font-size: 20px;
+}
+.popup2-para {
+  font-size: 18px;
+  font-family: "redHat-Regular";
+  font-weight: 400;
+  color: #0b105c;
+}
+.btn-popup2 {
+  background: linear-gradient(312.67deg, #f9b401 5.15%, #fcdd8e 134.92%);
+  width: 272px;
+  height: 36px;
+  border-radius: 7px;
+  border: none;
+  font-family: "redHat-Bold";
+  font-weight: 600;
+  font-size: 14px;
+  color: #0b105c;
+  right: 6%;
+  margin-top: 10px;
+  position: relative;
 }
 
 @media (max-width: 1200px) {
