@@ -355,6 +355,9 @@ hr {
   margin-top: 21px;
 }
 .card-scroll {
+  height: 352px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 @media (max-width: 1200px) {
   .same-cards {
