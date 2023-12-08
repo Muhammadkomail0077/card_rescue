@@ -171,7 +171,7 @@
 .main-section {
   display: flex;
   height: 100%;
-  width: max-content;
+  width: 100%;
   /* width: 100vw; */
   background-image: url(../img/background-img.png);
   background: linear-gradient(#f9b401 0%, #fcdd8e 200%);
