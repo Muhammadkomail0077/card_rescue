@@ -50,6 +50,9 @@
 .navbar-nav {
   text-align: left;
   width: 100%;
+  display: flex;
+
+  gap: 40px;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -409,6 +412,7 @@ hr {
     width: 24%;
     /* Expand the sidebar to full width */
     padding: 0;
+    height: auto;
     /* Remove padding for full width */
   }
 
