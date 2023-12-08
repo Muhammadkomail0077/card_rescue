@@ -354,7 +354,8 @@ hr {
   height: 138px;
   margin-top: 21px;
 }
-
+.card-scroll {
+}
 @media (max-width: 1200px) {
   .same-cards {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
