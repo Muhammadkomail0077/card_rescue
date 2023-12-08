@@ -356,8 +356,11 @@ hr {
 }
 .card-scroll {
   height: 352px;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
+}
+
+.card-scroll:hover {
+  overflow-y: scroll; /* Display vertical scroll bar on hover */
 }
 @media (max-width: 1200px) {
   .same-cards {
