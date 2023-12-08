@@ -359,6 +359,15 @@ hr {
   overflow: hidden;
 }
 
+.card-scroll::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar in webkit browsers */
+}
+
+.card-scroll {
+  -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
 .card-scroll:hover {
   overflow-y: scroll; /* Display vertical scroll bar on hover */
 }
