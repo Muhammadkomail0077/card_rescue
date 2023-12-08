@@ -11,11 +11,11 @@
   font-style: normal;
 }
 
-body {
+/* body {
   background-image: url(../img/background-img.png);
   background: linear-gradient(#f9b401 0%, #fcdd8e 200%);
   /* background-color: ; */
-}
+
 
 .container-custom {
   width: 100%;
@@ -167,6 +167,8 @@ body {
 
 .main-section {
   display: flex;
+  background-image: url(../img/background-img.png);
+  background: linear-gradient(#f9b401 0%, #fcdd8e 200%);
 }
 
 .notification-badge {
