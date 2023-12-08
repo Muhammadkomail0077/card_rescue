@@ -467,3 +467,9 @@ hr {
     max-width: 1673px;
   }
 }
+
+@media (max-width: 850px) {
+  .main-section {
+    width: 110%;
+  }
+}
