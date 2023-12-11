@@ -470,6 +470,7 @@ hr {
 @media (max-width: 850px) {
   .main-section {
     width: 110%;
+    overflow-x: hidden;
   }
 }
 
@@ -477,5 +478,8 @@ hr {
   .nav-item {
     /* flex-direction: column; */
     padding-left: 10px;
+  }
+  .white-bg {
+    width: 90%;
   }
 }
