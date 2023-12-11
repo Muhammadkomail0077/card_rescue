@@ -412,7 +412,7 @@ hr {
   }
 
   .navbar-vertical.custom-sidebar {
-    width: 24%;
+    /* width: 24%; */
     /* Expand the sidebar to full width */
     padding: 0;
     height: auto;
@@ -470,5 +470,12 @@ hr {
 @media (max-width: 850px) {
   .main-section {
     width: 110%;
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-item {
+    /* flex-direction: column; */
+    padding-left: 10px;
   }
 }
