@@ -222,9 +222,6 @@ body {
   .container {
     max-width: 1920px;
   }
-  .navbar {
-    width: 12%;
-  }
 }
 
 .card {
@@ -485,5 +482,10 @@ hr {
   }
   .white-bg {
     width: 90%;
+  }
+}
+@media (max-width: 1500px) {
+  .navbar {
+    width: 12%;
   }
 }
