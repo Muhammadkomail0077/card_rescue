@@ -117,8 +117,8 @@ body {
 }
 
 .btn-nav {
-  /* height: 20px; */
-  margin-top: 300px;
+  margin-top: 326px;
+  margin-bottom: 16px;
   background-color: #0b105c;
   border-radius: 0 20px 20px 0;
   /* Top-left, top-right, bottom-right, bottom-left */
@@ -346,10 +346,45 @@ body {
   height: auto;
   margin-top: 21px;
 }
+.main-card-scroll {
+  overflow-y: scroll;
+}
 
+.main-card-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1660px) {
+  .btn-nav {
+    margin-top: 338px;
+  }
+}
+@media (max-width: 1600px) {
+  .nav-item {
+    width: 140%;
+  }
+  .btn-nav {
+    margin-top: 362px;
+  }
+}
 @media (max-width: 1500px) {
   .navbar {
     width: 12%;
+  }
+}
+@media (max-width: 1460px) {
+  .btn-nav {
+    margin-top: 376px;
+  }
+}
+@media (max-width: 1399px) {
+  .btn-nav {
+    margin-top: 360px;
+  }
+}
+@media (max-width: 1360px) {
+  .btn-nav {
+    margin-top: 380px;
   }
 }
 @media (max-width: 1200px) {
@@ -421,10 +456,7 @@ body {
   }
 
   .btn-nav {
-    width: 124%;
-    margin-bottom: 18px;
-    text-align: center;
-    margin-top: 445px;
+    margin-top: 252px;
   }
 
   .navbar {
@@ -442,12 +474,28 @@ body {
     overflow-x: hidden;
   }
 }
-@media (max-width: 1600px) {
-  .nav-item {
-    width: 140%;
+
+@media (max-width: 1199px) {
+  .btn-nav {
+    margin-top: 226px;
+  }
+}
+@media (max-width: 1180px) {
+  .btn-nav {
+    margin-top: 256px;
+  }
+}
+@media (max-width: 1150px) {
+  .btn-nav {
+    margin-top: 263px;
   }
 }
 
+@media (max-width: 1024px) {
+  .btn-nav {
+    margin-top: 440px;
+  }
+}
 @media (max-width: 850px) {
   .nav-item {
     /* flex-direction: column; */
@@ -458,7 +506,10 @@ body {
     overflow-x: hidden;
   }
   .multi-buttons {
-    width: 181.79px;
+    width: 441.79px;
+  }
+  .btn {
+    width: 142.16px;
   }
   /* .white-bg {
           width: 90%;
@@ -498,17 +549,26 @@ body {
     width: 162%;
     height: 100%;
   }
+  .navbar-vertical.custom-sidebar {
+    gap: 12px;
+  }
+  .btn-nav {
+    margin-top: 300px;
+  }
 }
 @media (max-width: 804px) {
   .navbar-vertical.custom-sidebar {
     width: 13%;
   }
 }
-/* @media (max-width: 794px) {
-    .white-bg {
-      width: 87%;
-    }
-  } */
+@media (max-width: 768px) {
+  .main-card-scroll {
+    height: 472px;
+  }
+  .btn-nav {
+    margin-top: 158px;
+  }
+}
 /* @media (max-width: 780px) {
   .white-bg {
     width: 94%;

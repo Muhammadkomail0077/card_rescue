@@ -112,8 +112,8 @@ body {
 }
 
 .btn-nav {
-  /* height: 20px; */
-  margin-top: 300px;
+  margin-top: 326px;
+  margin-bottom: 16px;
   background-color: #0b105c;
   border-radius: 0 20px 20px 0;
   /* Top-left, top-right, bottom-right, bottom-left */
@@ -268,9 +268,9 @@ span {
   width: 10%;
 }
 
-label {
+#label {
   display: flex;
-  margin-left: 5%;
+  margin-left: 9%;
   margin-bottom: -4%;
   margin-top: 4%;
   font-family: "redHat-Regular";
@@ -376,93 +376,18 @@ input[type="email"] {
   margin-top: 22px;
   color: #0b105c;
 }
+.form-margin {
+  margin-top: 80px;
+}
 
 @media (max-width: 1500px) {
   .navbar {
     width: 12%;
   }
 }
-@media (max-width: 1200px) {
-  .same-cards {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid white;
-    border-radius: 13px 13px 0 0;
-    padding: 20px 20px;
-    margin-right: 15px;
-
-    width: 50%;
-
-    max-width: 100%;
-
-    margin-bottom: 15px;
-
-    margin-right: 0;
-    /* Remove right margin for full width */
-  }
-
-  .main-card {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    /* Set to 100% to occupy the full width */
-    height: auto;
-    /* Remove the fixed height to allow cards to adjust their height */
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
-
-  .navbar-vertical.custom-sidebar {
-    width: 14%;
-    padding: 0;
-    display: flex;
-    /* height: auto; */
-    margin-top: 70px;
-    gap: 52px;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-    /* padding-left: 29px; */
-  }
-
-  .nav-item {
-    /* flex-direction: column; */
-    padding-left: 29px;
-  }
-
-  .head-para {
-    color: #8b8b8b;
-    font-size: 12px;
-  }
-
-  .navbar-nav .nav-item .nav-link {
-    font-size: 15px;
-    font-family: "redHat-Regular";
-    font-weight: 600;
-    margin: 0px 0px;
-    padding: 10px 0px;
-    /* Add some vertical padding for readability */
-    height: auto;
-    /* Allow items to adjust height as needed */
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    color: #10234e;
-  }
-
+@media (max-width: 1670px) {
   .btn-nav {
-    width: 124%;
-    margin-bottom: 18px;
-    text-align: center;
-    margin-top: 445px;
-  }
-
-  .navbar {
-    width: 17%;
-    height: 100%;
-  }
-  .brand-logo {
-    margin: -32px 0px 30px 20px;
+    margin-top: 336px;
   }
 }
 
@@ -477,8 +402,25 @@ input[type="email"] {
   .nav-item {
     width: 140%;
   }
+  .btn-nav {
+    margin-top: 356px;
+  }
 }
-
+@media (max-width: 1320px) {
+  .btn-nav {
+    margin-top: 374px;
+  }
+}
+@media (max-width: 1140px) {
+  .btn-nav {
+    margin-top: 388px;
+  }
+}
+@media (max-width: 1024px) {
+  .btn-nav {
+    margin-top: 575px;
+  }
+}
 @media (max-width: 850px) {
   .nav-item {
     /* flex-direction: column; */
@@ -522,8 +464,17 @@ input[type="email"] {
     width: 89%;
   } */
   .logo-img {
-    width: 162%;
+    width: 200%;
     height: 100%;
+  }
+  .btn-nav {
+    margin-top: 387px;
+  }
+  .form-input {
+    width: 330.73px;
+  }
+  .btn-login {
+    width: 330.73px;
   }
 }
 @media (max-width: 804px) {
@@ -531,11 +482,14 @@ input[type="email"] {
     width: 13%;
   }
 }
-/* @media (max-width: 794px) {
-  .white-bg {
-    width: 87%;
+@media (max-width: 768px) {
+  .navbar-nav {
+    width: 108%;
   }
-} */
+  .btn-nav {
+    margin-top: 229px;
+  }
+}
 /* @media (max-width: 780px) {
   .white-bg {
     width: 85%;

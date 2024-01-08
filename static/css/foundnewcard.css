@@ -118,8 +118,8 @@ body {
 }
 
 .btn-nav {
-  /* height: 20px; */
-  margin-top: 300px;
+  margin-top: 328px;
+  margin-bottom: 14px;
   background-color: #0b105c;
   border-radius: 0 20px 20px 0;
   /* Top-left, top-right, bottom-right, bottom-left */
@@ -353,7 +353,7 @@ input {
 /* Styles for the overlay background */
 .overlay {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -577,9 +577,12 @@ input {
 #popupOverlay2 {
   display: none;
   position: absolute;
-
-  width: 100vw;
-  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
   /* background-color: rgba(0, 0, 0, 0.5); */
   z-index: 9999;
 }
@@ -618,9 +621,17 @@ input {
   margin-top: 10px;
   position: relative;
 }
+@media (max-width: 1650px) {
+  .btn-nav {
+    margin-top: 366px;
+  }
+}
 @media (max-width: 1500px) {
   .navbar {
     width: 12%;
+  }
+  .btn-nav {
+    margin-top: 378px;
   }
 }
 @media (max-width: 1200px) {
@@ -719,7 +730,11 @@ input {
     width: 140%;
   }
 }
-
+@media (max-width: 1024px) {
+  .btn-nav {
+    margin-top: 439px;
+  }
+}
 @media (max-width: 850px) {
   .nav-item {
     /* flex-direction: column; */
@@ -766,6 +781,12 @@ input {
     width: 162%;
     height: 100%;
   }
+  .navbar-vertical.custom-sidebar {
+    gap: 12px;
+  }
+  .btn-nav {
+    margin-top: 298px;
+  }
 }
 @media (max-width: 804px) {
   .navbar-vertical.custom-sidebar {
@@ -785,6 +806,12 @@ input {
 @media (min-width: 1500px) and (max-width: 1600px) {
   .navbar {
     width: 12%;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-nav {
+    margin-top: 156px;
   }
 }
 

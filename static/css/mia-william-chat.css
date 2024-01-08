@@ -134,8 +134,8 @@ body {
 }
 
 .btn-nav {
-  /* height: 20px; */
-  margin-top: 300px;
+  margin-top: 326px;
+  margin-bottom: 16px;
   background-color: #0b105c;
   border-radius: 0 20px 20px 0;
   /* Top-left, top-right, bottom-right, bottom-left */
@@ -554,17 +554,35 @@ hr {
   .input-text2 {
     padding-right: 26%;
   }
+  .btn-nav {
+    margin-top: 336px;
+  }
 }
-
 /* @media(max-width:1257px) {
         .inner-section1 {
             overflow-y: scroll;
         }
     } */
+@media (max-width: 1600px) {
+  .nav-item {
+    width: 140%;
+  }
+  .btn-nav {
+    margin-top: 365px;
+  }
+}
 
 @media (max-width: 1500px) {
   .navbar {
     width: 12%;
+  }
+  .btn-nav {
+    margin-top: 370px;
+  }
+}
+@media (max-width: 1350px) {
+  .btn-nav {
+    margin-top: 376px;
   }
 }
 @media (max-width: 1200px) {
@@ -639,7 +657,7 @@ hr {
     width: 124%;
     margin-bottom: 18px;
     text-align: center;
-    margin-top: 445px;
+    margin-top: 254px;
   }
 
   .navbar {
@@ -662,6 +680,7 @@ hr {
     right: 82px;
   }
 }
+
 @media (min-width: 1500px) {
   .container {
     max-width: 1604px;
@@ -669,14 +688,25 @@ hr {
     overflow-x: hidden;
   }
 }
-@media (max-width: 1600px) {
-  .nav-item {
-    width: 140%;
-  }
-}
+
 @media (max-width: 1242px) {
   .input-text2 {
     padding-right: 33%;
+  }
+}
+@media (max-width: 1199px) {
+  .btn-nav {
+    margin-top: 224px;
+  }
+}
+@media (max-width: 1180px) {
+  .btn-nav {
+    margin-top: 250px;
+  }
+}
+@media (max-width: 1160px) {
+  .btn-nav {
+    margin-top: 258px;
   }
 }
 @media (max-width: 1100px) {
@@ -690,6 +720,11 @@ hr {
   }
   .icon2 {
     right: 68px;
+  }
+}
+@media (max-width: 1024px) {
+  .btn-nav {
+    margin-top: 439px;
   }
 }
 @media (max-width: 850px) {
@@ -767,6 +802,24 @@ hr {
     width: 162%;
     height: 100%;
   }
+  .btn-nav {
+    margin-top: 298px;
+  }
+  .icon {
+    width: 36.8px;
+    height: 38.8px;
+  }
+  .icon2 {
+    right: 60px;
+    width: 26px;
+  }
+  .navbar-vertical.custom-sidebar {
+    gap: 12px;
+  }
+  .input-text2 {
+    padding: 12px;
+    padding-right: 40%;
+  }
 }
 @media (max-width: 804px) {
   .navbar-vertical.custom-sidebar {
@@ -787,6 +840,19 @@ hr {
   }
   .icon2 {
     right: 56px;
+  }
+}
+@media (max-width: 768px) {
+  .btn-nav {
+    margin-top: 155px;
+  }
+  .icon {
+    width: 34.8px;
+    height: 37.8px;
+  }
+  .icon2 {
+    right: 54px;
+    width: 24px;
   }
 }
 @media (min-width: 1500px) and (max-width: 1600px) {

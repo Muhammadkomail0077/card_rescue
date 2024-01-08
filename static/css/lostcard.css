@@ -112,8 +112,8 @@ body {
 }
 
 .btn-nav {
-  /* height: 20px; */
-  margin-top: 300px;
+  margin-top: 326px;
+  margin-bottom: 16px;
   background-color: #0b105c;
   border-radius: 0 20px 20px 0;
   /* Top-left, top-right, bottom-right, bottom-left */
@@ -253,14 +253,15 @@ body {
   /* justify-content: space-between; */
   /* width: 97%; */
   flex-wrap: wrap;
-  height: auto;
+  overflow-y: scroll;
+  height: 888px;
   margin-top: 21px;
 }
 
 .buttons {
   padding: 3px;
   /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   border-radius: 5px;
   display: flex;
   /* justify-content: ; */
@@ -269,7 +270,7 @@ body {
 .multi-buttons {
   margin-top: 55px;
   /* width: 100%; */
-  margin-bottom: 50px;
+
   margin-left: 42px;
 }
 
@@ -482,6 +483,11 @@ body {
     width: 12%;
   }
 }
+@media (max-width: 1508px) {
+  .btn-nav {
+    margin-top: 364px;
+  }
+}
 @media (max-width: 1200px) {
   .same-cards {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -505,7 +511,7 @@ body {
     justify-content: space-between;
     width: 100%;
     /* Set to 100% to occupy the full width */
-    height: auto;
+
     /* Remove the fixed height to allow cards to adjust their height */
     flex-wrap: wrap;
     margin-bottom: 30px;
@@ -564,6 +570,9 @@ body {
   .brand-logo {
     margin: -32px 0px 30px 20px;
   }
+  .btn-nav {
+    margin-top: 251px;
+  }
 }
 
 @media (min-width: 1500px) {
@@ -571,6 +580,11 @@ body {
     max-width: 1604px;
     margin-left: 0px;
     overflow-x: hidden;
+  }
+}
+@media (max-width: 1024px) {
+  .btn-nav {
+    margin-top: 439px;
   }
 }
 @media (max-width: 1600px) {
@@ -616,6 +630,9 @@ body {
   .btn-nav {
     width: 140%;
   }
+  .multi-buttons {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 820px) {
   /* .white-bg {
@@ -625,10 +642,24 @@ body {
     width: 162%;
     height: 100%;
   }
+  .btn-nav {
+    margin-top: 298px;
+  }
+  .navbar-vertical.custom-sidebar {
+    gap: 12px;
+  }
 }
 @media (max-width: 804px) {
   .navbar-vertical.custom-sidebar {
     width: 13%;
+  }
+}
+@media (max-width: 768px) {
+  .main-card {
+    height: 732px;
+  }
+  .btn-nav {
+    margin-top: 156px;
   }
 }
 /* @media (max-width: 794px) {
@@ -641,22 +672,20 @@ body {
       width: 85%;
     }
   } */
+
 @media (min-width: 1500px) and (max-width: 1600px) {
   .navbar {
     width: 12%;
   }
 }
 
-@media (max-width: 1037px) {
+/* @media (max-width: 1037px) {
   .same-cards {
     width: 100%;
   }
-}
+} */
 @media (min-width: 1200px) and (max-width: 1508px) {
   .navbar {
     height: 100%;
-  }
-  .btn-nav {
-    margin-top: 594px;
   }
 }
