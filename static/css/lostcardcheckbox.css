@@ -112,8 +112,8 @@ body {
 }
 
 .btn-nav {
-  /* height: 20px; */
-  margin-top: 300px;
+  margin-top: 326px;
+  margin-bottom: 16px;
   background-color: #0b105c;
   border-radius: 0 20px 20px 0;
   /* Top-left, top-right, bottom-right, bottom-left */
@@ -393,7 +393,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: auto;
-    height: 1116px;
+    height: 1012px;
     overflow-y: scroll;
     flex-wrap: wrap;
     margin-bottom: 30px;
@@ -411,9 +411,6 @@ body {
     margin-bottom: 15px;
     margin-right: 0;
   }
-
-  
-  
 
   .checkbox-color .custom-checkbox:checked:after {
     content: "\f00c";
@@ -554,7 +551,11 @@ body {
     width: 140%;
   }
 }
-
+@media (max-width: 1024px) {
+  .btn-nav {
+    margin-top: 403px;
+  }
+}
 @media (max-width: 850px) {
   .nav-item {
     /* flex-direction: column; */
@@ -601,17 +602,35 @@ body {
     width: 162%;
     height: 100%;
   }
+  .main-card {
+    height: 870px;
+  }
+  .btn-nav {
+    margin-top: 218px;
+  }
+  .buttons {
+    margin-bottom: 0px;
+  }
+  .multi-buttons {
+    margin-bottom: 12px;
+  }
 }
 @media (max-width: 804px) {
   .navbar-vertical.custom-sidebar {
     width: 13%;
   }
 }
-/* @media (max-width: 794px) {
-  .white-bg {
-    width: 87%;
+@media (max-width: 768px) {
+  .main-card {
+    height: 714px;
   }
-} */
+  .navbar-vertical.custom-sidebar {
+    gap: 14px;
+  }
+  .btn-nav {
+    margin-top: 117px;
+  }
+}
 /* @media (max-width: 780px) {
   .white-bg {
     width: 85%;
