@@ -374,6 +374,7 @@ hr {
   min-height: 352px;
   max-height: 640px;
   overflow: hidden;
+  overflow-x: scroll;
 }
 
 .card-scroll::-webkit-scrollbar {

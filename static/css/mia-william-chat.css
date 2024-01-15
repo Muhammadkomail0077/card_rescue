@@ -358,11 +358,11 @@ hr {
 
 .input-container {
   position: relative;
-  width: 100%;
+  /* display: flex; */
+  width: 48%;
   max-width: auto;
-  /* Set the maximum width for responsiveness */
-  margin: 0 auto;
-  /* Center the container horizontally */
+  /* margin: 0 auto; */
+  /* justify-content: center; */
 }
 
 .icon {

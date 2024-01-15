@@ -293,6 +293,55 @@ input[type="email"] {
   font-size: 16px;
   font-weight: 400px;
 }
+input[type="name"] {
+  border: none;
+  align-items: start;
+  display: flex;
+  justify-content: start;
+  background: none;
+  /* border-bottom: 1px solid #808184; */
+  outline: none;
+  width: 383px;
+  /* width: 320.1px; */
+  height: 70.53px;
+  color: #1c1c1c;
+  font-family: "redHat-Regular";
+  font-size: 16px;
+  font-weight: 400px;
+}
+input[type="Number"] {
+  border: none;
+  align-items: start;
+  display: flex;
+  justify-content: start;
+  background: none;
+  /* border-bottom: 1px solid #808184; */
+  outline: none;
+  width: 383px;
+  /* width: 320.1px; */
+  height: 70.53px;
+  color: #1c1c1c;
+  font-family: "redHat-Regular";
+  font-size: 16px;
+  font-weight: 400px;
+}
+
+input[type="text"] {
+  border: none;
+  align-items: start;
+  display: flex;
+  justify-content: start;
+  background: none;
+  /* border-bottom: 1px solid #808184; */
+  outline: none;
+  width: 383px;
+  /* width: 320.1px; */
+  height: 70.53px;
+  color: #1c1c1c;
+  font-family: "redHat-Regular";
+  font-size: 16px;
+  font-weight: 400px;
+}
 
 .form-input {
   display: flex;
